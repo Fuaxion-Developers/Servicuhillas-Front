@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import './globals.css';
 import  theme  from '@/theme/theme';
+import Navbar from '@/components/primary/navbar/Navbar';
 
 export const metadata: Metadata = {
   title: 'SERVICUCHILLAS',
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider theme={theme}>
           <CssBaseline />
+          <Navbar></Navbar>
           {children}
         </ThemeProvider>
       </body>
