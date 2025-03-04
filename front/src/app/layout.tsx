@@ -3,6 +3,7 @@ import { ThemeProvider, CssBaseline } from '@mui/material';
 import './globals.css';
 import  theme  from '@/theme/theme';
 import Navbar from '@/components/primary/navbar/Navbar';
+import Footer from '@/components/primary/footer/Footer'
 
 export const metadata: Metadata = {
   title: 'SERVICUCHILLAS',
@@ -22,6 +23,7 @@ export default function RootLayout({
           <CssBaseline />
           <Navbar></Navbar>
           {children}
+          <Footer></Footer>
         </ThemeProvider>
       </body>
     </html>

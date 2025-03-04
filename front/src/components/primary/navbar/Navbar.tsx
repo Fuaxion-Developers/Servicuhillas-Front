@@ -1,7 +1,12 @@
+'use client'
 import { Box, Typography } from '@mui/material';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'; // Usamos usePathname en lugar de useRouter
+import Logo from '@/assets/svg/Logo.svg';
 
 const Navbar = () => {
+  const pathname = usePathname(); // Obtenemos la ruta actual usando usePathname
+
   const items = [
     { name: 'Inicio', path: '/' },
     { name: 'Productos', path: '/productos' },
@@ -15,24 +20,24 @@ const Navbar = () => {
       sx={{
         display: 'flex',
         paddingY: '12px',
-        background: '#030712',
+        background: 'rgba(3, 7, 18, 0.3)',
         backdropFilter: 'blur(10px)',
         zIndex: 10,
         position: 'fixed',
         top: 0,
-        left: '50%', // Asegura que el box comience en el centro
-        transform: 'translateX(-50%)', // Ajusta el box para que quede completamente centrado
-        width: '95%', // Esto hace que ocupe el 80% del ancho de la pantalla
+        left: '50%', 
+        transform: 'translateX(-50%)',
+        width: '95%', 
         border: '1px solid #2B2B2B',
         paddingX: '36px',
         borderRadius: '50px',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginTop:'24px'
+        marginTop: '24px',
       }}
     >
       <Box>
-        <Typography variant="h2">SERVICUCHILLAS</Typography>
+        <Logo/>
       </Box>
       <Box sx={{ display: 'flex', gap: '24px' }}>
         {items.map(item => (
@@ -41,6 +46,7 @@ const Navbar = () => {
               sx={{
                 fontWeight: '500',
                 fontSize: '20px',
+                color: pathname === item.path ? '#FDC700' : 'inherit', // Usamos pathname para comparar
                 ':hover': {
                   color: '#2B2B2B',
                 },
