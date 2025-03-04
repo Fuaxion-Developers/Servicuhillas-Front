@@ -65,7 +65,7 @@ const theme = createTheme({
       textTransform: 'capitalize',
     },
     caption1: {
-      fontWeight: '600',
+      fontWeight: '500',
       fontSize: '14px',
     },
     caption2: {
