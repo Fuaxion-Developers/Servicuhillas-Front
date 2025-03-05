@@ -16,7 +16,7 @@ const Hero = () => {
         <Typography variant="h1">
           Más que cuchillas,{' '}
           <span style={{ color: '#F8ED0D' }}>
-            SERVICUCHILLAS
+            SERVICUCHILLA
           </span>
         </Typography>
         <Typography variant="body1">
