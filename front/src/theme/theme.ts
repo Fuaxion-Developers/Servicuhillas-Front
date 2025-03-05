@@ -1,35 +1,37 @@
 'use client';
 import { createTheme } from '@mui/material/styles';
-import { Poppins } from 'next/font/google';
+// import { Poppins, Arial } from 'next/font/google';
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
-});
+// const poppins = Poppins({
+//   subsets: ['latin'],
+//   weight: ['400', '500', '600'],
+// });
 
 const theme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#ffffff',
+      main: '#26156E',
     },
     secondary: {
-      main: '#9c27b0',
+      main: '#F8ED0D',
     },
     error: {
       main: '#f44336',
     },
     background: {
-      default: '#030712',
+      default: '#171717',
     },
   },
 
   typography: {
-    fontFamily: poppins.style.fontFamily,
+    fontFamily: 'Arial, sans-serif',
 
     h1: {
-      fontSize: '700',
-      fontWeight: 'bold',
+      fontWeight: '600',
+      fontSize: '60px',
+      color: '#F1f2ee',
+      fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif",
     },
     h2: {
       fontWeight: '700',
@@ -53,7 +55,8 @@ const theme = createTheme({
     },
     body1: {
       fontWeight: 'normal',
-      fontSize: '20px',
+      fontSize: '18px',
+      color: '#BFB7B6',
     },
     body2: {
       fontWeight: 'normal',
@@ -91,10 +94,8 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: 40,
-          padding: '12px 24px',
-          fontWeight: '500',
-          fontSize: '14px',
+          borderRadius: '10px',
+          padding: '12px 16px',
         },
       },
     },

@@ -2,11 +2,19 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  
+}
+@font-face {
+  font-family: 'Arial Rounded MT Bold';
+  src: url('/fonts/ArialRoundedMTBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   
 }
 
 * {
@@ -20,4 +28,7 @@ a {
   text-decoration: none;
 }
 /* #F8ED0D
+#F1F2EE
+#BFB7B6
+#848C8E
 #26156E */

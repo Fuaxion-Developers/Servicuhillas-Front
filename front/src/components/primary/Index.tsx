@@ -1,8 +1,9 @@
-import  Logo  from '@/assets/svg/Logo.svg';
+import Hero from './hero/Hero';
+
 const Index = () => {
   return (
     <div>
-      <Logo />
+      <Hero></Hero>
     </div>
   );
 };

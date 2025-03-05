@@ -1,7 +1,10 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-   experimental: {
+  images: {
+    domains: ['res.cloudinary.com'], // Agrega el dominio de Cloudinary
+  },
+  experimental: {
     turbo: {
       rules: {
         '*.svg': {
@@ -11,7 +14,7 @@ const nextConfig: NextConfig = {
       },
     },
   },
-}
+};
 
 
 export default nextConfig;

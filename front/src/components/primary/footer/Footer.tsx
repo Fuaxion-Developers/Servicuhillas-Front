@@ -13,7 +13,7 @@ const Footer = () => {
         padding: '48px',
         marginTop: '100px',
         justifyContent: 'space-between',
-        background: 'black',
+        background: '#171717',
       }}
     >
       <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
