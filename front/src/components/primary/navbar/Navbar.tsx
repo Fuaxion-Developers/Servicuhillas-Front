@@ -25,9 +25,9 @@ const Navbar = () => {
         zIndex: 10,
         position: 'fixed',
         top: 0,
-        left: '50%', 
+        left: '50%',
         transform: 'translateX(-50%)',
-        width: '95%', 
+        width: '95%',
         border: '1px solid #2B2B2B',
         paddingX: '36px',
         borderRadius: '50px',
@@ -37,18 +37,18 @@ const Navbar = () => {
       }}
     >
       <Box>
-        <Logo/>
+        <Logo />
       </Box>
       <Box sx={{ display: 'flex', gap: '24px' }}>
         {items.map(item => (
           <Link key={item.name} href={item.path}>
             <Typography
               sx={{
-                fontWeight: '500',
-                fontSize: '20px',
-                color: pathname === item.path ? '#FDC700' : 'inherit', // Usamos pathname para comparar
+                fontWeight: '400',
+                fontSize: '14px',
+                color: pathname === item.path ? '#F8ED0D ' : 'inherit', // Usamos pathname para comparar
                 ':hover': {
-                  color: '#2B2B2B',
+                  color: '#8F8F8F',
                 },
               }}
             >
