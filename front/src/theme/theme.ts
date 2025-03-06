@@ -14,16 +14,16 @@ const theme = createTheme({
       primary: '#FFFFFF',
     },
     primary: {
-      main: '#26156E',
+      main: '#1519FA',
     },
     secondary: {
-      main: '#F8ED0D',
+      main: '#EAC01B',
     },
     error: {
       main: '#f44336',
     },
     background: {
-      default: '#171717',
+      default: '#262626',
     },
   },
 
@@ -61,7 +61,7 @@ const theme = createTheme({
       fontSize: '10px',
       color: '#F1f2ee',
     },
-   
+
     body1: {
       fontWeight: 'normal',
       fontSize: '18px',

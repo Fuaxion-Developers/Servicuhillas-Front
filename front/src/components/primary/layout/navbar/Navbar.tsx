@@ -46,9 +46,9 @@ const Navbar = () => {
               sx={{
                 fontWeight: '400',
                 fontSize: '14px',
-                color: pathname === item.path ? '#F8ED0D ' : 'inherit', // Usamos pathname para comparar
+                color: pathname === item.path ? '#EAC01B ' : '#C9C9CA', // Usamos pathname para comparar
                 ':hover': {
-                  color: '#8F8F8F',
+                  color: '#6B6B6B',
                 },
               }}
             >

@@ -1,17 +1,19 @@
 import { Box, Typography } from '@mui/material';
 import VerifiedOutlinedIcon from '@mui/icons-material/VerifiedOutlined';
+import Groups3Icon from '@mui/icons-material/Groups3';
+import FactoryIcon from '@mui/icons-material/Factory';
 const Info = () => {
   return (
     <Box
       sx={{
         display: 'flex',
-        paddingX: '50px',
-        paddingBottom: '200px',
+        paddingX: '60px',
+        paddingBottom: '0px',
         justifyContent: 'space-between',
       }}
     >
       <Box sx={{ width: '350px', display: 'flex', gap: '12px' }}>
-        <VerifiedOutlinedIcon sx={{ color: '#F8ED0D' }} />
+        <VerifiedOutlinedIcon sx={{ color: '#EAC01B' }} />
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           <Typography variant="h4">Diseño centrado en el cliente</Typography>
           <Typography variant="body2">
@@ -23,7 +25,7 @@ const Info = () => {
         </Box>
       </Box>
       <Box sx={{ width: '350px', display: 'flex', gap: '12px' }}>
-        <VerifiedOutlinedIcon sx={{ color: '#F8ED0D' }} />
+        <Groups3Icon sx={{ color: '#EAC01B' }} />
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           <Typography variant="h4">Equipo de trabajo</Typography>
           <Typography variant="body2">
@@ -35,7 +37,7 @@ const Info = () => {
         </Box>
       </Box>
       <Box sx={{ width: '350px', display: 'flex', gap: '12px' }}>
-        <VerifiedOutlinedIcon sx={{ color: '#F8ED0D' }} />
+        <FactoryIcon sx={{ color: '#EAC01B' }} />
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           <Typography variant="h4">
             Satisfacer las demandas de la industria
