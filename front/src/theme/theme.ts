@@ -10,6 +10,9 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     mode: 'dark',
+    text: {
+      primary: '#FFFFFF',
+    },
     primary: {
       main: '#26156E',
     },
@@ -36,23 +39,29 @@ const theme = createTheme({
     h2: {
       fontWeight: '700',
       fontSize: '40px',
+      color: '#F1f2ee',
     },
     h3: {
       fontWeight: '600',
-      fontSize: '36px',
+      fontSize: '30px',
+      color: '#F1f2ee',
     },
     h4: {
       fontWeight: '500',
       fontSize: '24px',
+      color: '#F1f2ee',
     },
     h5: {
-      fontWeight: '500',
-      fontSize: '12px',
+      fontWeight: '600',
+      fontSize: '18px',
+      color: '#F1f2ee',
     },
     h6: {
       fontWeight: '500',
       fontSize: '10px',
+      color: '#F1f2ee',
     },
+   
     body1: {
       fontWeight: 'normal',
       fontSize: '18px',
@@ -61,6 +70,7 @@ const theme = createTheme({
     body2: {
       fontWeight: 'normal',
       fontSize: '16px',
+      color: '#BFB7B6',
     },
     button: {
       fontWeight: '600',

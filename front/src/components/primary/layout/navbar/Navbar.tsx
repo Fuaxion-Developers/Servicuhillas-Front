@@ -9,10 +9,10 @@ const Navbar = () => {
 
   const items = [
     { name: 'Inicio', path: '/' },
-    { name: 'Productos', path: '/productos' },
-    { name: 'Servicios', path: '/servicios' },
-    { name: 'Servicuchillas', path: '/servicuchillas' },
-    { name: 'Contacto', path: '/contacto' },
+    { name: 'Productos', path: '/products' },
+    { name: 'Servicios', path: '/services' },
+    { name: 'Historia', path: '/about' },
+    { name: 'Contacto', path: '/contact' },
   ];
 
   return (

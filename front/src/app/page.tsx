@@ -1,9 +1,9 @@
-import Index from "@/components/primary/Index";
+import IndexHome from '@/components/primary/home/IndexHome';
 
 export default function Home() {
   return (
     <div>
-      <Index></Index>
+      <IndexHome></IndexHome>
     </div>
   );
 }
