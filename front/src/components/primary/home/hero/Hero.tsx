@@ -1,23 +1,29 @@
+// import Circle1 from '@/components/secondary/circles/circles1/Circle1';
 import { Box, Button, Typography } from '@mui/material';
+import Prueba from '@/assets/svg/Prueba.svg'
 
-import Image from 'next/image';
+
 
 const Hero = () => {
   return (
     <Box
       sx={{
         display: 'flex',
-        paddingX: '50px',
+        paddingX: '60px',
         paddingY: '200px',
         justifyContent: 'space-between',
+        position: 'relative',
       }}
     >
+      {/* <Box
+        sx={{ position: 'absolute', top: '0px', right: '30px', zIndex: -1 }}
+      >
+        <Circle1></Circle1>
+      </Box> */}
       <Box sx={{ width: '700px' }}>
         <Typography variant="h1">
           Más que cuchillas,{' '}
-          <span style={{ color: '#F8ED0D' }}>
-            SERVICUCHILLAS
-          </span>
+          <span style={{ color: '#EAC01B' }}>SERVICUCHILLAS</span>
         </Typography>
         <Typography variant="body1">
           Empresa especializada en la fabricación, mantenimiento y afilado de
@@ -28,19 +34,14 @@ const Hero = () => {
           <Button variant="contained">Empieza a Explorar</Button>
           <Button
             variant="contained"
-            sx={{ background: '#848c8E', color: '#F1F2EE' }}
+            sx={{ background: '#3F3F47', color: '#C9C9CA' }}
           >
             Contactar al equipo de ventas
           </Button>
         </Box>
       </Box>
       <Box>
-        <Image
-          width={450}
-          height={350}
-          alt=""
-          src="https://res.cloudinary.com/dseutp7hi/image/upload/v1741188971/Group_18_3_izonce.png"
-        ></Image>
+        <Prueba width="500px" height="500px"></Prueba>
       </Box>
     </Box>
   );
