@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import './globals.css';
 import  theme  from '@/theme/theme';
-import Navbar from '@/components/primary/navbar/Navbar';
-import Footer from '@/components/primary/footer/Footer'
+import Navbar from '@/components/primary/layout/navbar/Navbar';
+import Footer from '@/components/primary/layout/footer/Footer'
 
 export const metadata: Metadata = {
   title: 'SERVICUCHILLAS',

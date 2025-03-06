@@ -10,26 +10,28 @@ const Footer = () => {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        padding: '48px',
+        paddingY: '36px',
+        paddingX: '60px',
         marginTop: '100px',
         justifyContent: 'space-between',
-        background: '#171717',
+        background: 'black',
+        gap:'60px'
       }}
     >
       <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <Box>
           <Logo />
         </Box>
-        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+        {/* <Box sx={{ display: 'flex', flexDirection: 'column' }}>
           <Typography variant="caption1">sobre nosotros</Typography>
           <Typography variant="caption1">SERVICUCHILLAS</Typography>
           <Typography variant="caption1">SERVICUCHILLAS</Typography>
           <Typography variant="caption1">SERVICUCHILLAS</Typography>
-        </Box>
+        </Box> */}
       </Box>
-      <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems:'center' }}>
         <Box>
-          <Typography variant="h5">&copy;2025 SERVICUCHILLAS LTDA</Typography>
+          <Typography variant="body2">&copy; 2025 SERVICUCHILLAS LTDA. Elaborado por FUAXION</Typography>
         </Box>
         <Box>
           <WhatsAppIcon fontSize="large"></WhatsAppIcon>
