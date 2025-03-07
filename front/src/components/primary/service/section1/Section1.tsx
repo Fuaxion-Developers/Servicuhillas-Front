@@ -23,7 +23,11 @@ const Section1 = () => {
     <Box
       sx={{
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
+        padding: '100px 100px 0px 100px',
+        width: '90%',
+        mx: 'auto',
+        borderBottom: "2px solid lightgray",
       }}
     >
       <Box
@@ -31,7 +35,6 @@ const Section1 = () => {
           width: "30%",
           maxWidth: "800px",
           mx: "auto",
-          // borderRadius: "12px",
           overflow: "hidden",
           marginLeft: '150px'
         }}
