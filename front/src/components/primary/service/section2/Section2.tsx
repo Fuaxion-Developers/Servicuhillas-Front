@@ -1,68 +1,99 @@
-import { Box, Typography,  Grid2 } from '@mui/material';
-import Image from 'next/image';
+import { Box, Typography, Grid2, List, ListItem } from "@mui/material";
+import Image from "next/image";
 
 const Section2 = () => {
   return (
     <Box
       sx={{
-        maxWidth: '85rem',
-        mx: 'auto',
-        px: { xs: 4, sm: 6, lg: 8 },
-        py: { xs: 10, lg: 14 },
-        display: 'grid',
-        gridTemplateColumns: { lg: '1fr 1fr' },
+        width: "85rem",
+        mx: "auto",
+        display: "flex",
+        gridTemplateColumns: { lg: "1fr 1fr" },
         gap: 4,
-        alignItems: 'center',
+        alignItems: "center",
+        marginBottom: "150px",
       }}
     >
-      {/* Texto */}
-      <Box>
+      <Box
+        sx={{
+          width: "50%",
+        }}
+      >
         <Typography
           variant="h2"
           sx={{
             mb: 4,
-            fontWeight: 'extrabold',
-            color: 'text.primary',
+            fontWeight: "extrabold",
+            color: "text.primary",
           }}
         >
-          Ofreciendo orientación experta
+          Industría del plástico
         </Typography>
         <Typography
           variant="body1"
           sx={{
             mb: 4,
-            maxWidth: 'sm',
-            color: 'text.secondary',
+            maxWidth: "sm",
+            color: "text.secondary",
           }}
         >
-          Emprender un proyecto de construcción puede ser abrumador. Con
-          nuestros servicios de asesoramiento profesional, lo guiaremos en cada
-          etapa, asegurándonos de que tome decisiones informadas. Ya sea un
-          aficionado al bricolaje o un contratista experto, nuestros expertos
-          están disponibles para ofrecerle asesoramiento personalizado sobre la
-          selección de productos, el alcance del proyecto y el cumplimiento de
-          las regulaciones locales.
+          Cuchillas diseñadas para garantizar cortes precisos y eficientes en
+          materiales como polímeros, plásticos rígidos y flexibles. Se fabrican
+          en aceros de alta resistencia y recubrimientos especiales para
+          soportar el desgaste y la fricción generada en procesos de reciclaje,
+          extrusión e inyección.
         </Typography>
+        <List sx={{ pl: 2 }}>
+          <ListItem sx={{ display: "list-item", pl: 2 }}>
+            <strong>Materiales de alta resistencia:</strong> Fabricadas en aceros endurecidos y tratamientos especiales para mayor durabilidad.
+          </ListItem>
+          <ListItem sx={{ display: "list-item", pl: 2 }}>
+            <strong>Cortes precisos y limpios:</strong> Minimización de rebabas y desperdicio de material.
+          </ListItem>
+          <ListItem sx={{ display: "list-item", pl: 2 }}>
+            <strong>Diseño a medida:</strong> Adaptadas a distintos tipos de máquinas y procesos industriales.
+          </ListItem>
+          <ListItem sx={{ display: "list-item", pl: 2 }}>
+            <strong>Resistencia al desgaste:</strong> Tratamientos térmicos y recubrimientos anticorrosivos para prolongar su vida útil.
+          </ListItem>
+          <ListItem sx={{ display: "list-item", pl: 2 }}>
+            <strong>Usos comunes:</strong> Trituración, molienda, corte en caliente, y granulación de plásticos reciclados y vírgenes.
+          </ListItem>
+        </List>
       </Box>
 
       {/* Imágenes */}
-      <Grid2 container spacing={2}>
-        <Grid2 >
+      <Grid2
+        container
+        spacing={2}
+        sx={{
+          width: "50%",
+        }}
+      >
+        <Grid2
+          sx={{
+            width: "40%",
+          }}
+        >
           <Image
-            src="/blueprints-image.DxAt2gto_ZWTTNw.avif"
-            alt="Planos y tableta digital con planos de construcción."
-            width={1333}
-            height={2000}
-            style={{ borderRadius: '12px', width: '100%' }}
+            src="https://res.cloudinary.com/dkobjvdgn/image/upload/v1741300183/linea-plastico_eifjfh.jpg"
+            alt="Rollos de material plástico."
+            width={500}
+            height={250}
+            style={{ borderRadius: "12px", width: "100%" }}
           />
         </Grid2>
-        <Grid2 >
+        <Grid2
+          sx={{
+            width: "40%",
+          }}
+        >
           <Image
-            src="/person-working.aUGgRiE__1hU8Vn.avif"
-            alt="Persona trabajando en la oficina"
-            width={1334}
-            height={2000}
-            style={{ borderRadius: '12px', width: '100%', marginTop: '1rem' }}
+            src="https://res.cloudinary.com/dkobjvdgn/image/upload/v1741300496/linea-plastico_02_gjt5qw.jpg"
+            alt="Vasos plásticos"
+            width={500}
+            height={250}
+            style={{ borderRadius: "12px", width: "100%", marginTop: "1rem" }}
           />
         </Grid2>
       </Grid2>
