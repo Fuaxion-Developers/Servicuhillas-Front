@@ -36,7 +36,7 @@ const Figures = () => {
             <Typography
               variant="h2"
               fontWeight="bold"
-              color="orange"
+              color="#EAC01B"
               gutterBottom
             >
               96%
@@ -54,7 +54,7 @@ const Figures = () => {
                 width: "30%",
               }}
             >
-              <Typography variant="h4" fontWeight="bold" color="orange">
+              <Typography variant="h4" fontWeight="bold" color="#EAC01B">
                 99.8%
               </Typography>
               <Typography variant="body2" color="text.secondary">
@@ -66,7 +66,7 @@ const Figures = () => {
                 width: "30%",
               }}
             >
-              <Typography variant="h4" fontWeight="bold" color="orange">
+              <Typography variant="h4" fontWeight="bold" color="#EAC01B">
                 5,000+
               </Typography>
               <Typography variant="body2" color="text.secondary">
@@ -78,7 +78,7 @@ const Figures = () => {
                 width: "30%",
               }}
             >
-              <Typography variant="h4" fontWeight="bold" color="orange">
+              <Typography variant="h4" fontWeight="bold" color="#EAC01B">
                 85%
               </Typography>
               <Typography variant="body2" color="text.secondary">
