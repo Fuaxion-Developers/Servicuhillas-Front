@@ -51,7 +51,7 @@ const Info = () => {
         >
           {section.icon}
           <Box>
-            <Typography variant="h6" fontWeight="bold">
+            <Typography variant="h4" fontWeight="bold">
               {section.title}
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
