@@ -93,8 +93,8 @@ const theme = createTheme({
 
   breakpoints: {
     values: {
-      desktop: 1280,
-      laptop: 1024,
+      desktop: 1920,
+      laptop: 1366,
       tablet: 640,
       mobile: 0,
     },
