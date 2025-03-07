@@ -33,8 +33,8 @@ const Numbers = () => {
     <Box
       sx={{
         display: 'flex',
-        paddingX: '60px',
-        paddingY: '50px',
+        paddingX: '250px',
+        paddingTop: '150px',
         justifyContent: 'space-between',
         alignItems: 'center',
         position: 'relative',
@@ -49,18 +49,18 @@ const Numbers = () => {
         }}
       >
         <Box>
-          <Typography variant="h3">Acelere sus proyectos</Typography>
+          <Typography variant="h3">Acelere sus procesos</Typography>
           <Typography variant="body1">
-            En ScrewFast, garantizamos un inicio rápido con la creación
-            instantánea de la cuenta. Experimente la velocidad de la
-            construcción redefinida.
+            En Servicuchillas, garantizamos un inicio rápido con la creación
+            instantánea de su cuenta. Experimente la velocidad en la producción
+            y mantenimiento de cuchillas industriales como nunca antes.
           </Typography>
         </Box>
-        <Typography variant="h5" color= '#BFB7B6'>
-          ScrewFast mejoró drásticamente la eficiencia de nuestro proyecto. La
-          instalación fue instantánea y sus rápidos tiempos de respuesta son
-          fenomenales. ¡Realmente un punto de inflexión en el soporte de
-          construcción y hardware!
+        <Typography variant="h5" color="#BFB7B6" sx={{ fontStyle: 'italic' }}>
+          Servicuchillas mejoró drásticamente la eficiencia de nuestros
+          procesos. La implementación fue inmediata y sus tiempos de respuesta
+          rápidos son fenomenales. ¡Realmente un punto de inflexión en el
+          soporte industrial y la fabricación de cuchillas!
         </Typography>
       </Box>
 
@@ -84,7 +84,9 @@ const Numbers = () => {
           </Grid2>
         ))}
       </Grid2>
-      <Box sx={{ position: 'absolute', top:'240px', left:'30px', zIndex:-1 }}>
+      <Box
+        sx={{ position: 'absolute', top: '350px', left: '220px', zIndex: -1 }}
+      >
         <Comillas></Comillas>
       </Box>
     </Box>

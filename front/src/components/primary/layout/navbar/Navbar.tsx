@@ -19,21 +19,21 @@ const Navbar = () => {
     <Box
       sx={{
         display: 'flex',
-        paddingY: '12px',
-        background: 'rgba(3, 7, 18, 0.3)',
+        paddingY: '20px',
+        background: 'rgba(38, 38, 38, 0.5)',
         backdropFilter: 'blur(10px)',
         zIndex: 10,
         position: 'fixed',
         top: 0,
         left: '50%',
         transform: 'translateX(-50%)',
-        width: '95%',
-        border: '1px solid #2B2B2B',
+        width: '77%',
+        border: '1px solid #363636',
         paddingX: '36px',
         borderRadius: '50px',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginTop: '24px',
+        marginTop: '12px',
       }}
     >
       <Box>
@@ -43,12 +43,11 @@ const Navbar = () => {
         {items.map(item => (
           <Link key={item.name} href={item.path}>
             <Typography
+              variant="caption1"
               sx={{
-                fontWeight: '400',
-                fontSize: '14px',
-                color: pathname === item.path ? '#EAC01B ' : '#C9C9CA', // Usamos pathname para comparar
+                color: pathname === item.path ? '#EAC01B ' : '#939393', // Usamos pathname para comparar
                 ':hover': {
-                  color: '#6B6B6B',
+                  color: '#4F4F4F',
                 },
               }}
             >

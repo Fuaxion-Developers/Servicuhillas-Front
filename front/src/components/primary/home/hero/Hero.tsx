@@ -1,6 +1,7 @@
 // import Circle1 from '@/components/secondary/circles/circles1/Circle1';
 import { Box, Button, Typography } from '@mui/material';
-import Prueba from '@/assets/svg/Prueba.svg'
+
+import Image from 'next/image';
 
 
 
@@ -9,18 +10,13 @@ const Hero = () => {
     <Box
       sx={{
         display: 'flex',
-        paddingX: '60px',
-        paddingY: '200px',
+        paddingX: '250px',
+        paddingTop: '150px',
         justifyContent: 'space-between',
         position: 'relative',
       }}
     >
-      {/* <Box
-        sx={{ position: 'absolute', top: '0px', right: '30px', zIndex: -1 }}
-      >
-        <Circle1></Circle1>
-      </Box> */}
-      <Box sx={{ width: '700px' }}>
+      <Box sx={{ width: '700px', gap: '24px', display: 'flex', flexDirection:'column' }}>
         <Typography variant="h1">
           Más que cuchillas,{' '}
           <span style={{ color: '#EAC01B' }}>SERVICUCHILLAS</span>
@@ -30,7 +26,7 @@ const Hero = () => {
           cuchillas industriales para las industrias del plástico, papel,
           madera, caucho, metal y alimentos.
         </Typography>
-        <Box sx={{ gap: '12px', display: 'flex', marginTop: '24px' }}>
+        <Box sx={{ gap: '12px', display: 'flex' }}>
           <Button variant="contained">Empieza a Explorar</Button>
           <Button
             variant="contained"
@@ -41,7 +37,12 @@ const Hero = () => {
         </Box>
       </Box>
       <Box>
-        <Prueba width="500px" height="500px"></Prueba>
+        <Image
+          alt="Productos"
+          src="https://res.cloudinary.com/dseutp7hi/image/upload/v1741187167/Group_18_2_b1hfgt.png"
+          width={400}
+          height={300}
+        ></Image>
       </Box>
     </Box>
   );

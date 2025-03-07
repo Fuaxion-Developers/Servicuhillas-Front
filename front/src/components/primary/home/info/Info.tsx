@@ -7,8 +7,9 @@ const Info = () => {
     <Box
       sx={{
         display: 'flex',
-        paddingX: '60px',
-        paddingBottom: '0px',
+        paddingX: '250px',
+        paddingTop: '150px',
+        
         justifyContent: 'space-between',
       }}
     >
