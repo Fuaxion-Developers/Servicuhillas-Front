@@ -1,105 +1,57 @@
-import Circle2 from '@/components/secondary/circles/circles2/Circle2';
 import { Box, Typography } from '@mui/material';
-import Object3 from '@/assets/svg/Object3.svg';
-import Circles4 from '@/components/secondary/circles/circles4/Circles4';
-
-const Team = () => {
+import VerifiedOutlinedIcon from '@mui/icons-material/VerifiedOutlined';
+import Groups3Icon from '@mui/icons-material/Groups3';
+import FactoryIcon from '@mui/icons-material/Factory';
+const Info = () => {
   return (
     <Box
       sx={{
         display: 'flex',
-        flexDirection: {  tablet: 'row' }, // Columna en móviles, fila en tablet y mayores
-        padding: {
-          mobile: '20px',
-          tablet: '40px',
-          laptop: '60px',
-          desktop: '100px',
-        }, // Padding responsivo
+        paddingX: '60px',
+        paddingBottom: '0px',
         justifyContent: 'space-between',
-        alignItems: 'center',
       }}
     >
-      <Box sx={{ maxWidth: { mobile: '100%', tablet: '50%' } }}>
-        <Typography
-          variant="h2"
-          sx={{
-            fontSize: {
-              mobile: '24px',
-              tablet: '32px',
-              laptop: '36px',
-              desktop: '40px',
-            },
-          }}
-        >
-          Trabajo en equipo
-        </Typography>
-        <Typography
-          sx={{
-            fontSize: {
-              mobile: '14px',
-              tablet: '16px',
-              laptop: '18px',
-              desktop: '20px',
-            },
-            marginTop: '16px',
-          }}
-        >
-          Me apasiona trabajar en equipo, ya que creo firmemente en el poder de
-          la colaboración para alcanzar objetivos de manera eficiente y
-          creativa. Disfruto compartir ideas, aprender de los demás y contribuir
-          con mis habilidades para lograr resultados exitosos. Me caracterizo
-          por mi capacidad de comunicación, empatía y resolución de problemas,
-          lo que me permite integrarme fácilmente en grupos de trabajo diversos.
-          Siempre estoy dispuesto a aportar y a recibir retroalimentación
-          constructiva para mejorar tanto individual como colectivamente.
-        </Typography>
-      </Box>
-      <Box
-        sx={{
-          position: 'relative',
-          maxWidth: { mobile: '100%', tablet: '50%' }, // Adaptado para pantallas pequeñas
-          marginTop: { mobile: '20px', tablet: '0' }, // Espacio en la parte superior para móviles
-        }}
-      >
-        <Object3 />
-        <Box
-          sx={{
-            position: 'absolute',
-            top: {
-              mobile: '-30px',
-              tablet: '-50px',
-              laptop: '-100px',
-              desktop: '-100px',
-            },
-            right: { mobile: '-50px', tablet: '0', laptop: '0', desktop: '0' },
-            zIndex: -1,
-          }}
-        >
-          <Circle2 />
+      <Box sx={{ width: '350px', display: 'flex', gap: '12px' }}>
+        <VerifiedOutlinedIcon sx={{ color: '#EAC01B' }} />
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <Typography variant="h4">Diseño centrado en el cliente</Typography>
+          <Typography variant="body2">
+            En Servicuchillas Ltda., cada producto es diseñado para garantizar
+            máximo rendimiento y durabilidad, adaptándose a las necesidades
+            específicas de cada industria. Brindamos soluciones precisas con un
+            servicio cercano y personalizado.
+          </Typography>
         </Box>
-        <Box
-          sx={{
-            position: 'absolute',
-            top: {
-              mobile: '-180px',
-              tablet: '-150px',
-              laptop: '310px',
-              desktop: '310px',
-            },
-            right: {
-              mobile: '-150px',
-              tablet: '-120px',
-              laptop: '50px',
-              desktop: '50px',
-            },
-            zIndex: -1,
-          }}
-        >
-          <Circles4 />
+      </Box>
+      <Box sx={{ width: '350px', display: 'flex', gap: '12px' }}>
+        <Groups3Icon sx={{ color: '#EAC01B' }} />
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <Typography variant="h4">Equipo de trabajo</Typography>
+          <Typography variant="body2">
+            Nuestro equipo combina experiencia, compromiso y pasión por la
+            calidad. Como empresa de tradición familiar, valoramos el trabajo en
+            equipo y la mejora continua para ofrecer soluciones óptimas con un
+            trato humano y profesional.
+          </Typography>
+        </Box>
+      </Box>
+      <Box sx={{ width: '350px', display: 'flex', gap: '12px' }}>
+        <FactoryIcon sx={{ color: '#EAC01B' }} />
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <Typography variant="h4">
+            Satisfacer las demandas de la industria
+          </Typography>
+          <Typography variant="body2">
+            Las industrias exigen precisión y eficiencia, y en Servicuchillas
+            Ltda. respondemos con tecnología, calidad y rapidez. Nuestro
+            compromiso es entregar productos de alto desempeño que superen las
+            expectativas del sector.
+          </Typography>
         </Box>
       </Box>
     </Box>
   );
 };
 
-export default Team;
+export default Info;
