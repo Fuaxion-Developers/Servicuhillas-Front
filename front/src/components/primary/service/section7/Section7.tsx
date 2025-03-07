@@ -1,7 +1,7 @@
 import { Box, Typography, Grid2, List, ListItem } from "@mui/material";
 import Image from "next/image";
 
-const Section3 = () => {
+const Section7 = () => {
   return (
     <Box
       sx={{
@@ -18,8 +18,8 @@ const Section3 = () => {
         width: '50%',
       }}>
         <Image
-          src="https://res.cloudinary.com/dkobjvdgn/image/upload/v1741305174/linea-papel_ajsu69.jpg"
-          alt="Industria de papel"
+          src="https://res.cloudinary.com/dkobjvdgn/image/upload/v1741316388/linea-alimentos_krnrnh.jpg"
+          alt="Industria de alimentos."
           width={500}
           height={250}
           style={{ borderRadius: "12px", width: "100%", height: 'auto' }}
@@ -36,7 +36,7 @@ const Section3 = () => {
             color: "text.primary",
           }}
         >
-          Industría del papel
+          Industría de alimentos
         </Typography>
         <Typography
           variant="body1"
@@ -46,27 +46,23 @@ const Section3 = () => {
             color: "text.secondary",
           }}
         >
-          Cuchillas diseñadas para realizar cortes precisos en materiales como
-          papel, cartón y celulosa, garantizando bordes limpios y minimizando el
-          desperdicio. Se fabrican con aceros de alta dureza y recubrimientos
-          especiales para resistir el desgaste y la fricción constante en
-          procesos de corte y troquelado.
+          Cuchillas diseñadas para realizar cortes precisos en productos como carnes, embutidos, pan, frutas, vegetales y otros alimentos procesados. Están fabricadas en acero inoxidable de grado alimenticio, lo que garantiza resistencia a la corrosión, higiene y cumplimiento de normativas sanitarias. Su diseño optimiza la eficiencia del corte y minimiza el desperdicio de producto.
         </Typography>
         <List sx={{ pl: 2 }}>
           <ListItem sx={{ display: "list-item", pl: 2 }}>
-            <strong>Alta precisión:</strong> Garantizan cortes limpios sin desgarres ni imperfecciones.
+            <strong>Material higiénico y resistente:</strong> Acero inoxidable con alta resistencia a la corrosión y fácil limpieza.
           </ListItem>
           <ListItem sx={{ display: "list-item", pl: 2 }}>
-            <strong>Materiales resistentes:</strong> Fabricadas en aceros de alta dureza con tratamientos para mayor durabilidad.
+            <strong>Corte preciso y uniforme:</strong> Diseñadas para garantizar eficiencia en procesos de producción automatizados.
           </ListItem>
           <ListItem sx={{ display: "list-item", pl: 2 }}>
-            <strong>Diseño a medida:</strong> Adaptadas a distintos tipos de máquinas y aplicaciones.
+            <strong>Variedad de formas y tamaños:</strong> Adaptadas para diferentes tipos de alimentos y maquinaria.
           </ListItem>
           <ListItem sx={{ display: "list-item", pl: 2 }}>
-            <strong>Baja fricción:</strong> Recubrimientos especiales para reducir el calentamiento y el desgaste.
+            <strong>Durabilidad y rendimiento:</strong> Tratamientos especiales para reducir el desgaste y aumentar la vida útil.
           </ListItem>
           <ListItem sx={{ display: "list-item", pl: 2 }}>
-            <strong>Usos comunes:</strong> Corte de bobinas, troquelado de etiquetas, procesamiento de cartón y papel reciclado.
+            <strong>Usos comunes:</strong> Procesamiento de carnes, panificación, corte de frutas y vegetales, producción de snacks y alimentos congelados.
           </ListItem>
         </List>
       </Box>
@@ -74,4 +70,4 @@ const Section3 = () => {
   );
 };
 
-export default Section3;
+export default Section7;

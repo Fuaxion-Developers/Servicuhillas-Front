@@ -1,7 +1,7 @@
 import { Box, Typography,  Grid2, List, ListItem } from '@mui/material';
 import Image from 'next/image';
 
-const Section4 = () => {
+const Section6 = () => {
   return (
     <Box
       sx={{
@@ -26,7 +26,7 @@ const Section4 = () => {
             color: 'text.primary',
           }}
         >
-          Industría de la madera
+          Industría metalmecánica
         </Typography>
         <Typography
           variant="body1"
@@ -36,23 +36,23 @@ const Section4 = () => {
             color: 'text.secondary',
           }}
         >
-          Cuchillas diseñadas para realizar cortes precisos y eficientes en diferentes tipos de madera, desde tableros de fibra hasta troncos macizos. Se fabrican con aceros de alta resistencia y tratamientos especiales que les permiten soportar altas velocidades y esfuerzos sin perder el filo.
+          Cuchillas diseñadas para cortar, troquelar y dar forma a metales de distintas durezas con alta precisión y durabilidad. Fabricadas con aceros de alta resistencia y tratamientos térmicos especializados, estas cuchillas garantizan un rendimiento óptimo en entornos de alta exigencia, minimizando el desgaste y optimizando la producción.
         </Typography>
         <List sx={{ pl: 2 }}>
           <ListItem sx={{ display: "list-item", pl: 2 }}>
-            <strong>Corte limpio y preciso:</strong> Diseñadas para minimizar astillas y desperdicio de material.
+            <strong>Alta dureza y resistencia al desgaste:</strong> Fabricadas en acero templado o con recubrimientos especiales.
           </ListItem>
           <ListItem sx={{ display: "list-item", pl: 2 }}>
-            <strong>Alta resistencia:</strong> Fabricadas en aceros endurecidos para mayor durabilidad.
+            <strong>Precisión en el corte:</strong> Ideales para cortar láminas, tubos y piezas metálicas sin deformaciones.
           </ListItem>
           <ListItem sx={{ display: "list-item", pl: 2 }}>
-            <strong>Adaptabilidad:</strong> Disponibles en diferentes formatos para sierras, cepilladoras y trituradoras.
+            <strong>Durabilidad optimizada:</strong> Diseñadas para soportar altas cargas de trabajo.
           </ListItem>
           <ListItem sx={{ display: "list-item", pl: 2 }}>
-            <strong>Recubrimientos especiales:</strong> Reducen la fricción y el desgaste, prolongando la vida útil.
+            <strong>Versatilidad de aplicaciones:</strong> Utilizadas en procesos de estampado, troquelado, cizallado y perfilado de metales.
           </ListItem>
           <ListItem sx={{ display: "list-item", pl: 2 }}>
-            <strong>Usos comunes:</strong> Procesamiento de tableros, corte de madera maciza, fabricación de muebles y carpintería industrial.
+            <strong>Usos comunes:</strong> Producción de piezas automotrices, estructuras metálicas, herramientas y componentes industriales.
           </ListItem>
         </List>
       </Box>
@@ -65,8 +65,8 @@ const Section4 = () => {
           width: '40%',
         }}>
           <Image
-            src="https://res.cloudinary.com/dkobjvdgn/image/upload/v1741313521/linea-madera_t0mfak.jpg"
-            alt="Troncos de madera."
+            src="https://res.cloudinary.com/dkobjvdgn/image/upload/v1741315953/linea-metalmecanica_02_fqumh1.jpg"
+            alt="Láminas de metal."
             width={500}
             height={250}
             style={{ borderRadius: '12px', width: '100%' }}
@@ -76,8 +76,8 @@ const Section4 = () => {
           width: '40%',
         }}>
           <Image
-            src="https://res.cloudinary.com/dkobjvdgn/image/upload/v1741313521/linea-madera_02_nop0rj.jpg"
-            alt="Listones de madera."
+            src="https://res.cloudinary.com/dkobjvdgn/image/upload/v1741315952/linea-metalmecanica_g9qciw.jpg"
+            alt="Cortando tuvo de metal."
             width={500}
             height={250}
             style={{ borderRadius: '12px', width: '100%', marginTop: '1rem' }}
@@ -88,4 +88,4 @@ const Section4 = () => {
   );
 };
 
-export default Section4;
+export default Section6;
