@@ -28,49 +28,47 @@ const theme = createTheme({
   },
 
   typography: {
-    fontFamily: 'Arial, sans-serif',
-
     h1: {
       fontWeight: '600',
       fontSize: '60px',
-      color: '#F1f2ee',
-      fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif",
+      color: '#E5E5E5',
+      // fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif",
     },
     h2: {
       fontWeight: '700',
       fontSize: '40px',
-      color: '#F1f2ee',
+      color: '#E5E5E5',
     },
     h3: {
       fontWeight: '600',
       fontSize: '30px',
-      color: '#F1f2ee',
+      color: '#E5E5E5',
     },
     h4: {
       fontWeight: '500',
       fontSize: '24px',
-      color: '#F1f2ee',
+      color: '#E5E5E5',
     },
     h5: {
       fontWeight: '600',
       fontSize: '18px',
-      color: '#F1f2ee',
+      color: '#E5E5E5',
     },
     h6: {
       fontWeight: '500',
       fontSize: '10px',
-      color: '#F1f2ee',
+      color: '##E5E5E5',
     },
 
     body1: {
       fontWeight: 'normal',
       fontSize: '18px',
-      color: '#BFB7B6',
+      color: '#939393',
     },
     body2: {
       fontWeight: 'normal',
       fontSize: '16px',
-      color: '#BFB7B6',
+      color: '#939393',
     },
     button: {
       fontWeight: '600',
@@ -78,8 +76,8 @@ const theme = createTheme({
       textTransform: 'capitalize',
     },
     caption1: {
-      fontWeight: '500',
-      fontSize: '14px',
+      fontWeight: '600',
+      fontSize: '16px',
     },
     caption2: {
       fontWeight: '500',
@@ -101,6 +99,8 @@ const theme = createTheme({
   },
 
   components: {
+ 
+
     MuiButton: {
       styleOverrides: {
         root: {
@@ -121,7 +121,18 @@ const theme = createTheme({
         },
       },
     },
-
+ MuiCssBaseline: {
+      styleOverrides: {
+        html: {
+          scrollbarWidth: 'none', 
+        },
+        'html::-webkit-scrollbar': {
+          display: 'none', 
+        },
+        
+      },
+    },
+  
     MuiTypography: {
       styleOverrides: {
         root: {

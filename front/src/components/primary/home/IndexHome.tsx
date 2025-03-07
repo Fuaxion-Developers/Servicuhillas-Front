@@ -1,3 +1,4 @@
+import AccordionUsage from './acordion/Acordion';
 import Hero from './hero/Hero';
 import ImgInfo from './imgInfo/ImgInfo';
 import Info from './info/Info';
@@ -10,6 +11,7 @@ const IndexHome = () => {
       <Info></Info>
       <ImgInfo></ImgInfo>
       <Numbers></Numbers>
+      <AccordionUsage></AccordionUsage>
     </div>
   );
 };
