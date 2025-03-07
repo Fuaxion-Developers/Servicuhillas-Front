@@ -11,6 +11,7 @@ const Section2 = () => {
         gridTemplateColumns: { lg: "1fr 1fr" },
         gap: 4,
         alignItems: "center",
+        marginTop: "100px",
         marginBottom: "150px",
       }}
     >
