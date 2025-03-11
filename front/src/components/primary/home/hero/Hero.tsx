@@ -8,14 +8,25 @@ const Hero = () => {
     <Box
       sx={{
         display: 'flex',
-
-        justifyContent: 'space-between',
+        flexDirection: {
+          mobile: 'column',
+          tablet: 'column',
+          laptop: 'row',
+          desktop: 'row',
+        },
+        justifyContent: {
+          mobile: 'center',
+          tablet: 'center',
+          laptop: 'space-between',
+          desktop: 'space-between',
+        },
+        alignItems: { mobile: 'center' },
         position: 'relative',
       }}
     >
       <Box
         sx={{
-          width: '70rem',
+          width: {mobile:'40rem', laptop: '70rem', desktop: '70rem' },
           gap: '2.4rem',
           display: 'flex',
           flexDirection: 'column',
@@ -30,7 +41,19 @@ const Hero = () => {
           cuchillas industriales para las industrias del plástico, papel,
           madera, caucho, metal y alimentos.
         </Typography>
-        <Box sx={{ gap: '1.2rem', display: 'flex' }}>
+        <Box
+          sx={{
+            gap: '1.2rem',
+            display: 'flex',
+            flexDirection: {
+              mobile: 'column',
+              tablet: 'column',
+              laptop: 'row',
+              desktop: 'row',
+            },
+            maxWidth: { mobile: '100%', tablet: 'auto' },
+          }}
+        >
           <Button variant="contained">Empieza a Explorar</Button>
           <Button
             variant="contained"

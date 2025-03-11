@@ -29,6 +29,7 @@ const Info = () => {
     <Box
       sx={{
         display: 'flex',
+        flexDirection:{mobile:'column', tablet:'column', laptop:'row', desktop:'row'},
         paddingTop: '15rem',
         justifyContent: 'space-between',
       }}

@@ -7,7 +7,7 @@ import Numbers from './numbers/Numbers';
 
 const IndexHome = () => {
   return (
-    <Box sx={{ paddingX: '6.2rem', paddingTop: '13rem' }}>
+    <Box sx={{  paddingTop: '13rem'}}>
       <Hero></Hero>
       <Info></Info>
       <ImgInfo></ImgInfo>
