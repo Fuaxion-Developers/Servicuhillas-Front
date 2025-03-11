@@ -8,7 +8,8 @@ const Form = () => {
         display: "flex",
         flexDirection: "column",
         width: '60%',
-        paddingInline: '100px',
+        paddingLeft: '100px',
+        paddingRight: '50px',
       }}
     >
       <Typography
@@ -25,26 +26,29 @@ const Form = () => {
       <form>
         <Grid2
           container
-          spacing={2}
           sx={{
             display: "flex",
             flexDirection: "column",
+            alignItems: 'center'
           }}
         >
           <Grid2
             container
             sx={{
               display: "flex",
-              justifyContent: 'space-around'
+              justifyContent: 'space-around',
+              width: '100%'
             }}
           >
             <Grid2 sx={{
-                width: '48%'
+                width: '49%',
+                marginY: '12px'
             }}>
               <TextField fullWidth label="Nombre" variant="outlined" />
             </Grid2>
             <Grid2 sx={{
-                width: '48%'
+                width: '49%',
+                marginY: '12px',
             }}>
               <TextField fullWidth label="Apellido" variant="outlined" />
             </Grid2>
@@ -53,11 +57,13 @@ const Form = () => {
             container
             sx={{
               display: "flex",
-              justifyContent: 'space-around'
+              justifyContent: 'space-around',
+              width: '100%'
             }}
           >
             <Grid2 sx={{
-                width: '48%'
+                width: '49%',
+                marginY: '12px'
             }}>
               <TextField
                 fullWidth
@@ -68,7 +74,8 @@ const Form = () => {
               />
             </Grid2>
             <Grid2 sx={{
-                width: '48%'
+                width: '49%',
+                marginY: '12px'
             }}>
               <TextField
                 fullWidth
@@ -80,21 +87,21 @@ const Form = () => {
           </Grid2>
           <Grid2
             container
-            spacing={2}
             sx={{
               display: "flex",
+              width: '99%'
             }}
           >
             <TextField
               fullWidth
               label="Detalles"
               multiline
-              rows={4}
+              rows={6}
               variant="outlined"
             />
           </Grid2>
         </Grid2>
-        <Box mt={4}>
+        <Box mt={4} sx={{width: '99%'}} mx='auto'>
           <Button fullWidth variant="contained" type="submit">
             Enviar
           </Button>
