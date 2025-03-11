@@ -3,7 +3,7 @@ import { Box, Typography, Button } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useEffect, useRef } from "react";
 
-const Section1 = () => {
+const Head = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
@@ -28,6 +28,7 @@ const Section1 = () => {
         width: '90%',
         mx: 'auto',
         borderBottom: "2px solid lightgray",
+        marginBottom: '100px',
       }}
     >
       <Box
@@ -74,10 +75,18 @@ const Section1 = () => {
           eficientes que optimizan los procesos de corte y reducen costos
           operativos.
         </Typography>
+        <Typography
+          variant="body1"
+          color="#EAC01B"
+          sx={{ maxWidth: "900px", ml: 0, mb: 3 }}
+        >
+          Fabricamos bajo muestra física o plano suministrado por el cliente.
+        </Typography>
 
         <Button
           variant="contained"
           endIcon={<ArrowForwardIcon />}
+          href={`/contact`}
           sx={{
             fontWeight: "bold",
             px: 3,
@@ -92,4 +101,4 @@ const Section1 = () => {
   );
 };
 
-export default Section1;
+export default Head;

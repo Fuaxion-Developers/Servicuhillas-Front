@@ -1,24 +1,53 @@
-import Section1 from './section1/Section1';
-import Section2 from './section2/Section2';
-import Section3 from './section3/Section3';
-import Section4 from './section4/Section4';
-import Section5 from './section5/Section5';
-import Section6 from './section6/Section6';
-import Section7 from './section7/Section7';
-import Figures from './figures/Figures';
+"use client";
+import Head from "./head/Head";
+import Figures from "./figures/Figures";
+import Industry from "./industry/Industry";
+import { Box } from "@mui/material";
+import { useEffect, useState } from "react";
+import { IndustryT } from "@/types/industry";
+import Papa from "papaparse";
 
 const IndexService = () => {
+  const [industries, setIndustries] = useState<IndustryT[]>();
+
+  const fetchData = async () => {
+    const url = process.env.NEXT_PUBLIC_SERVICES_URL;
+
+    if (!url) throw new Error("LA url no está definida");
+
+    const response = await fetch(url).then((res) => res.text());
+
+    const gettingIndustries = Papa.parse(response, {
+      header: true,
+      skipEmptyLines: true,
+    });
+
+    const industries = gettingIndustries.data as IndustryT[];
+
+    return industries;
+  };
+
+  useEffect(() => {
+    const getData = async () => {
+      const data = await fetchData();
+      console.log(data);
+      setIndustries(data);
+    };
+    getData();
+  }, []);
+
   return (
-    <div>
-      <Section1></Section1>
-      <Section2></Section2>
-      <Section3></Section3>
-      <Section4></Section4>
-      <Section5></Section5>
-      <Section6></Section6>
-      <Section7></Section7>
+    <Box
+      sx={{
+        paddingX: "100px",
+      }}
+    >
+      <Head></Head>
+      {industries?.map((industry) => {
+        return <Industry key={industry.number} industry={industry}></Industry>;
+      })}
       <Figures></Figures>
-    </div>
+    </Box>
   );
 };
 
