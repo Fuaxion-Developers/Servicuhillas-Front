@@ -1,10 +1,34 @@
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('/fonts/segoeuithis.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-/* @font-face {
-  font-family: 'Arial Rounded MT Bold';
-  src: url('/fonts/ArialRoundedMTBold.ttf') format('truetype');
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('/fonts/segoeuithibd.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
-} */
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('/fonts/segoeuithisi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('/fonts/segoeuithisz.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
 
 /* body {
   -webkit-font-smoothing: antialiased;
@@ -12,14 +36,24 @@
  text-rendering: optimizeLegibility; 
    
 } */
+/* img {
+  object-fit: contain;
+  overflow: hidden;
+ 
+} */
 
-
-
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; /* 1rem = 10px en lugar de 16px */
+}
 a {
   color: inherit;
   text-decoration: none;
 }
-/* #EAC01B
+/* 
+#282F3C
+#FBC600
+#26156E
 #1519FA
 #E5E5E5
 #C9C9CA

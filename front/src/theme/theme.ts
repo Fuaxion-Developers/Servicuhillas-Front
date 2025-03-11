@@ -1,106 +1,78 @@
 'use client';
 import { createTheme } from '@mui/material/styles';
-// import { Poppins, Arial } from 'next/font/google';
 
-// const poppins = Poppins({
-//   subsets: ['latin'],
-//   weight: ['400', '500', '600'],
-// });
-
+const responsiveTypography = (
+  mobile: string,
+  tablet: string,
+  laptop: string,
+  desktop: string,
+  weight = '400'
+) => ({
+  fontSize: mobile,
+  fontWeight: weight,
+  '@media (min-width:768px)': {
+    fontSize: tablet,
+  },
+  '@media (min-width:1024px)': {
+    fontSize: laptop,
+  },
+  '@media (min-width:1440px)': {
+    fontSize: desktop,
+  },
+});
 const theme = createTheme({
   palette: {
     mode: 'dark',
     text: {
-      primary: '#FFFFFF',
+      primary: '#E5E5E5',
+      secondary: '#939393',
     },
     primary: {
-      main: '#1519FA',
+      main: '#26156E',
     },
     secondary: {
-      main: '#EAC01B',
+      main: '#FBC600',
     },
     error: {
       main: '#f44336',
     },
     background: {
-      default: '#262626',
+      default: '#050C1F',
+      // default: '#262626',
     },
   },
 
   typography: {
-    h1: {
-      fontWeight: '600',
-      fontSize: '60px',
-      color: '#E5E5E5',
-      // fontFamily: "'Arial Rounded MT Bold', Arial, sans-serif",
-    },
-    h2: {
-      fontWeight: '700',
-      fontSize: '40px',
-      color: '#E5E5E5',
-    },
-    h3: {
-      fontWeight: '600',
-      fontSize: '30px',
-      color: '#E5E5E5',
-    },
-    h4: {
-      fontWeight: '500',
-      fontSize: '24px',
-      color: '#E5E5E5',
-    },
-    h5: {
-      fontWeight: '600',
-      fontSize: '18px',
-      color: '#E5E5E5',
-    },
-    h6: {
-      fontWeight: '500',
-      fontSize: '10px',
-      color: '##E5E5E5',
-    },
-
-    body1: {
-      fontWeight: 'normal',
-      fontSize: '18px',
-      color: '#939393',
-    },
-    body2: {
-      fontWeight: 'normal',
-      fontSize: '16px',
-      color: '#939393',
-    },
-    button: {
-      fontWeight: '600',
-      fontSize: '14px',
-      textTransform: 'capitalize',
-    },
-    caption1: {
-      fontWeight: '600',
-      fontSize: '16px',
-    },
-    caption2: {
-      fontWeight: '500',
-      fontSize: '14px',
-    },
-    caption3: {
-      fontWeight: '300',
-      fontSize: '15px',
-    },
+    fontFamily: "'Segoe UI', sans-serif",
+    h1: responsiveTypography('3rem', '4rem', '6rem', '6rem', '700'),
+    h2: responsiveTypography('2.8rem', '3.6rem', '3.6rem', '4.8rem', '700'),
+    h3: responsiveTypography('2.4rem', '3rem', '3rem', '4rem', '600'),
+    h4: responsiveTypography('2rem', '2.6rem', '1.8rem', '3.2rem', '600'),
+    // h5: responsiveTypography('1.8rem', '2.2rem', '2rem', '2.8rem', '600'),
+    // h6: responsiveTypography('1.6rem', '2rem', '1.8rem', '1.8rem', '600'),
+    body1: responsiveTypography('1.4rem', '1.6rem', '1.8rem', '2rem', '500'),
+    body2: responsiveTypography('1.2rem', '1.4rem', '1.6rem', '1.8rem', '400'),
+    button: responsiveTypography('1.4rem', '1.6rem', '1.4rem', '2rem', '600'),
+    caption1: responsiveTypography(
+      '1.2rem',
+      '1.4rem',
+      '1.4rem',
+      '1.8rem',
+      '600'
+    ),
+    caption2: responsiveTypography('1rem', '1.2rem', '1.4rem', '1.6rem', '400'),
   },
 
   breakpoints: {
     values: {
-      desktop: 1920,
-      laptop: 1366,
-      tablet: 640,
       mobile: 0,
+      tablet: 768,
+      laptop: 1024,
+      desktop: 1440,
     },
   },
 
   components: {
- 
-
     MuiButton: {
       styleOverrides: {
         root: {
@@ -110,36 +82,35 @@ const theme = createTheme({
       },
     },
 
-    MuiInputBase: {
-      styleOverrides: {
-        input: {
-          '&:-webkit-autofill': {
-            WebkitBoxShadow: '0 0 0px 1000px transparent inset',
-            WebkitTextFillColor: '#fff',
-            transition: 'background-color 5000s ease-in-out 0s',
-          },
-        },
-      },
-    },
- MuiCssBaseline: {
+    // MuiInputBase: {
+    //   styleOverrides: {
+    //     input: {
+    //       '&:-webkit-autofill': {
+    //         WebkitBoxShadow: '0 0 0px 1000px transparent inset',
+    //         WebkitTextFillColor: '#fff',
+    //         transition: 'background-color 5000s ease-in-out 0s',
+    //       },
+    //     },
+    //   },
+    // },
+    MuiCssBaseline: {
       styleOverrides: {
         html: {
-          scrollbarWidth: 'none', 
+          scrollbarWidth: 'none',
         },
         'html::-webkit-scrollbar': {
-          display: 'none', 
-        },
-        
-      },
-    },
-  
-    MuiTypography: {
-      styleOverrides: {
-        root: {
-          textDecoration: 'none',
+          display: 'none',
         },
       },
     },
+
+    // MuiTypography: {
+    //   styleOverrides: {
+    //     root: {
+    //       textDecoration: 'none',
+    //     },
+    //   },
+    // },
   },
 });
 
