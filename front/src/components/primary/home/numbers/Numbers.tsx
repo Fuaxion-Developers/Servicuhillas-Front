@@ -56,7 +56,7 @@ const Numbers = () => {
           </Typography>
         </Box>
         <Typography variant="body1" color="#BFB7B6" sx={{ fontStyle: 'italic', fontWeight:'600', fontSize:'2rem' }}>
-          Servicuchillas mejoró drásticamente la eficiencia de nuestros
+          Servicuchillas mejoró drasticamente la eficiencia de nuestros
           procesos. La implementación fue inmediata y sus tiempos de respuesta
           rápidos son fenomenales. ¡Realmente un punto de inflexión en el
           soporte industrial y la fabricación de cuchillas!
