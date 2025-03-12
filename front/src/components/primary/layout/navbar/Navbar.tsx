@@ -1,11 +1,11 @@
 'use client'
 import { Box, Typography } from '@mui/material';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'; // Usamos usePathname en lugar de useRouter
+import { usePathname } from 'next/navigation'; 
 import Logo from '@/assets/svg/Logo.svg';
 
 const Navbar = () => {
-  const pathname = usePathname(); // Obtenemos la ruta actual usando usePathname
+  const pathname = usePathname(); 
 
   const items = [
     { name: 'Inicio', path: '/' },
@@ -19,33 +19,33 @@ const Navbar = () => {
     <Box
       sx={{
         display: 'flex',
-        paddingY: '20px',
-        background: 'rgba(38, 38, 38, 0.5)',
-        backdropFilter: 'blur(10px)',
+        paddingY: '1.5rem',
+        background: 'rgba(5, 12, 31, 0.5)',
+        backdropFilter: 'blur(1rem)',
         zIndex: 10,
         position: 'fixed',
         top: 0,
         left: '50%',
         transform: 'translateX(-50%)',
-        width: '77%',
-        border: '1px solid #363636',
-        paddingX: '36px',
-        borderRadius: '50px',
+        width: '95%',
+        border: '0.1rem solid #363636',
+        paddingX: '3.6rem',
+        borderRadius: '5rem',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginTop: '12px',
+        marginTop: '1.2rem',
       }}
     >
       <Box>
         <Logo />
       </Box>
-      <Box sx={{ display: 'flex', gap: '24px' }}>
+      <Box sx={{ display: 'flex', gap: '2.4rem' }}>
         {items.map(item => (
           <Link key={item.name} href={item.path}>
             <Typography
               variant="caption1"
               sx={{
-                color: pathname === item.path ? '#EAC01B ' : '#939393', // Usamos pathname para comparar
+                color: pathname === item.path ? '#EAC01B ' : '#939393', 
                 ':hover': {
                   color: '#4F4F4F',
                 },
