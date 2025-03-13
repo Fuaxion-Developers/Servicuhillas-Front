@@ -1,5 +1,6 @@
 // import Circle1 from '@/components/secondary/circles/circles1/Circle1';
 import { Box, Button, Typography } from '@mui/material';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 import Image from 'next/image';
 
@@ -7,6 +8,7 @@ const Hero = () => {
   return (
     <Box
       sx={{
+        marginX: "15rem",
         display: 'flex',
         flexDirection: {
           mobile: 'column',
@@ -17,8 +19,8 @@ const Hero = () => {
         justifyContent: {
           mobile: 'center',
           tablet: 'center',
-          laptop: 'space-between',
-          desktop: 'space-between',
+          laptop: 'space-around',
+          desktop: 'space-around',
         },
         alignItems: { mobile: 'center' },
         position: 'relative',
@@ -54,12 +56,14 @@ const Hero = () => {
             maxWidth: { mobile: '100%', tablet: 'auto' },
           }}
         >
-          <Button variant="contained">Empieza a Explorar</Button>
+          <Button variant="contained" href={`/services`}>Empieza a Explorar</Button>
           <Button
             variant="contained"
+            href={`/contact`}
             sx={{ background: '#282F3C', color: '#C9C9CA' }}
           >
-            Contactar al equipo de ventas
+            Contactar al equipo
+            <ArrowForwardIcon sx={{ fontSize: "3rem", marginLeft: "1rem" }} />
           </Button>
         </Box>
       </Box>

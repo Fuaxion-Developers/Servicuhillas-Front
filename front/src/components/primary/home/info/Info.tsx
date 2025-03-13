@@ -31,7 +31,7 @@ const Info = () => {
         display: 'flex',
         flexDirection:{mobile:'column', tablet:'column', laptop:'row', desktop:'row'},
         paddingTop: '15rem',
-        justifyContent: 'space-between',
+        justifyContent: 'space-around',
       }}
     >
       {infoData.map((item, index) => (
