@@ -7,33 +7,63 @@ import { Box } from '@mui/material';
 
 const faqData = [
   {
-    question: '¿Qué incluye el kit de inicio de cuchillas industriales?',
+    question: '¿Qué tipo de cuchillas fabrican y afilan?',
     answer:
-      'Nuestro kit de inicio incluye una selección de cuchillas industriales esenciales para diversas aplicaciones de corte. Contiene cuchillas de alto rendimiento para diferentes materiales, junto con accesorios clave para su instalación y mantenimiento. Ha sido diseñado para ayudar tanto a nuevos clientes como a profesionales experimentados a optimizar sus procesos de corte con herramientas de calidad.',
+      'Fabricamos y afilamos cuchillas industriales para diversas industrias, incluyendo plástico, papel, madera, caucho, metalmecánica y alimentos. Nuestras cuchillas están diseñadas para garantizar cortes precisos y mayor durabilidad.',
   },
   {
     question:
-      '¿Puedo actualizar a un kit de cuchillas industriales más avanzado?',
+      '¿Ofrecen fabricación de cuchillas personalizadas?',
     answer:
-      'Por supuesto! Puedes actualizar a un kit profesional en cualquier momento para acceder a una gama más amplia de cuchillas de alta calidad, disfrutar de soporte prioritario y recibir contenido exclusivo sobre el uso y mantenimiento de nuestras herramientas. Ponte en contacto con nuestro equipo para una transición sin inconvenientes.',
+      'Sí, diseñamos y fabricamos cuchillas a medida según las necesidades específicas de cada cliente. Podemos adaptar dimensiones, materiales y acabados para garantizar el mejor rendimiento en su proceso productivo.',
   },
   {
     question:
-      '¿Qué tipo de soporte recibo con mi kit de cuchillas industriales?',
+      '¿Qué materiales utilizan en la fabricación de sus cuchillas?',
     answer:
-      'Todos nuestros clientes cuentan con soporte por correo electrónico dedicado. Con el Kit de Inicio, recibirás nuestro soporte estándar, mientras que al actualizar a un kit profesional obtendrás soporte prioritario, con tiempos de respuesta más rápidos y asistencia especializada para optimizar el uso de tus cuchillas industriales.',
+      'Trabajamos con aceros de alta resistencia, como acero al carbono, acero inoxidable y aceros aleados con tratamientos térmicos, asegurando mayor durabilidad, precisión y resistencia al desgaste.',
   },
   {
     question:
-      '¿Ofrecen recursos y tutoriales sobre el uso de las cuchillas industriales?',
+      '¿Cuánto tiempo tarda el proceso de afilado o fabricación?',
     answer:
-      'Sí, actualizamos regularmente nuestros recursos y tutoriales en línea para reflejar las últimas innovaciones en corte industrial, así como para presentar nuevas cuchillas y técnicas. Nuestro material está diseñado para ser completo y fácil de entender, adaptándose a todos los niveles de experiencia.',
+      'El tiempo varía según la complejidad y el volumen del pedido. El afilado de cuchillas suele tardar entre 24 y 72 horas, mientras que la fabricación de cuchillas personalizadas depende de las especificaciones del cliente y la carga de producción.',
   },
   {
     question:
-      '¿Ofrecen soluciones para empresas con grandes necesidades de corte industrial?',
+      '¿Cómo puedo solicitar una cotización?',
     answer:
-      'Sí, nuestras Soluciones Empresariales están diseñadas para compañías que requieren un servicio integral. Ofrecemos consultoría, planificación y suministro de cuchillas industriales de alto rendimiento, así como asesoramiento para optimizar procesos de corte a gran escala. Contáctanos para una cotización personalizada.',
+      'Puede contactarnos a través de nuestro sitio web, correo electrónico, teléfono o visítenos en nuestra sede. Para ofrecerle una cotización precisa, necesitamos conocer las dimensiones, material y tipo de aplicación de la cuchilla.',
+  },
+  {
+    question:
+      '¿Ofrecen servicio de recolección y entrega de cuchillas?',
+    answer:
+      'Sí, contamos con servicio de recolección y entrega en ciertas zonas. Consulte con nuestro equipo para conocer la cobertura y disponibilidad en su área.',
+  },
+  {
+    question:
+      '¿Tienen garantía en sus productos y servicios?',
+    answer:
+      'Sí, garantizamos la calidad de nuestras cuchillas y servicios de afilado. Si presenta algún inconveniente con el rendimiento de la cuchilla, nuestro equipo está disponible para revisar el caso y brindarle una solución.',
+  },
+  {
+    question:
+      '¿Solo trabajan con empresas o también con clientes individuales?',
+    answer:
+      'Atendemos tanto a grandes empresas como a clientes individuales que necesiten cuchillas de alta calidad para sus procesos productivos.',
+  },
+  {
+    question:
+      '¿Pueden fabricar cuchillas para maquinaria importada?',
+    answer:
+      'Sí, podemos fabricar cuchillas compatibles con maquinaria de distintas marcas y procedencias. Solo necesitamos las especificaciones o muestras para garantizar la compatibilidad.',
+  },
+  {
+    question:
+      '¿Qué diferencia a Servicuchillas de otras empresas del sector?',
+    answer:
+      'Nos diferenciamos por nuestro enfoque en la calidad, la personalización y la atención cercana. Somos una empresa familiar con más de una década de experiencia, combinando tecnología, innovación y un servicio humano que garantiza soluciones eficientes y duraderas.',
   },
 ];
 
@@ -70,7 +100,7 @@ export default function AccordionUsage() {
         display: 'flex',
         paddingTop: '15rem',
         paddingBottom: '0.5rem',
-        justifyContent: 'space-between',
+        justifyContent: 'space-around',
       }}
     >
       <Box sx={{ width: '30rem' }}>
