@@ -2,7 +2,7 @@ import { Box, Typography, Grid2 } from "@mui/material";
 
 const Figures = () => {
   return (
-    <Box sx={{ maxWidth: "85rem", mx: "auto" }}>
+    <Box sx={{ width: "90%", mx: "auto" }}>
       <Box sx={{ maxWidth: "600px", textAlign: "left", ml: 0, mb: 6 }}>
         <Typography
           variant="h4"
@@ -20,8 +20,11 @@ const Figures = () => {
         </Typography>
       </Box>
 
-      <Grid2 container spacing={6} alignItems="center">
-        <Grid2
+      <Box sx={{
+        display: "flex",
+        alignItems: "center",
+      }}>
+        <Box
           sx={{
             width: "30%",
             display: "flex",
@@ -32,7 +35,8 @@ const Figures = () => {
             pr: 4,
           }}
         >
-          <Box>
+          <Box sx={{
+          }}>
             <Typography
               variant="h2"
               fontWeight="bold"
@@ -42,52 +46,57 @@ const Figures = () => {
               96%
             </Typography>
             <Typography variant="body1" color="text.secondary">
-              de nuestros clientes califican su experiencia con Servicuchillas como excepcional
+              de nuestros clientes califican su experiencia con Servicuchillas
+              como excepcional
             </Typography>
           </Box>
-        </Grid2>
+        </Box>
 
-        <Grid2>
-          <Grid2 container spacing={4}>
-            <Grid2
-              sx={{
-                width: "30%",
-              }}
-            >
-              <Typography variant="h4" fontWeight="bold" color="#EAC01B">
-                99.8%
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                taza de finalización de proyectos
-              </Typography>
-            </Grid2>
-            <Grid2
-              sx={{
-                width: "30%",
-              }}
-            >
-              <Typography variant="h4" fontWeight="bold" color="#EAC01B">
-                5,000+
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                cuchillas fabricadas
-              </Typography>
-            </Grid2>
-            <Grid2
-              sx={{
-                width: "30%",
-              }}
-            >
-              <Typography variant="h4" fontWeight="bold" color="#EAC01B">
-                85%
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                crecimiento de clientes año tras año
-              </Typography>
-            </Grid2>
+        <Box
+          sx={{
+            width: "70%",
+            display: "flex",
+            justifyContent: "space-around",
+          }}
+        >
+          <Grid2
+            sx={{
+              width: "30%",
+            }}
+          >
+            <Typography variant="h4" fontWeight="bold" color="#EAC01B">
+              99.8%
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              taza de recompra
+            </Typography>
           </Grid2>
-        </Grid2>
-      </Grid2>
+          <Grid2
+            sx={{
+              width: "30%",
+            }}
+          >
+            <Typography variant="h4" fontWeight="bold" color="#EAC01B">
+              4,000+
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              cuchillas fabricadas en el último año
+            </Typography>
+          </Grid2>
+          <Grid2
+            sx={{
+              width: "30%",
+            }}
+          >
+            <Typography variant="h4" fontWeight="bold" color="#EAC01B">
+              300+
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              clientes satisfechos en el último año
+            </Typography>
+          </Grid2>
+        </Box>
+      </Box>
     </Box>
   );
 };

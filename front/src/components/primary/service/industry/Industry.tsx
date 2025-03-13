@@ -6,10 +6,9 @@ const Industry = ({ industry }: { industry: IndustryT }) => {
   return Number(industry.number) % 2 === 0 ? (
     <Box
       sx={{
-        maxWidth: "85rem",
+        width: "90%",
         mx: "auto",
         display: "flex",
-        // justifyContent: 'space-between',
         gridTemplateColumns: { lg: "1fr 1fr" },
         gap: 10,
         alignItems: "center",
@@ -48,7 +47,6 @@ const Industry = ({ industry }: { industry: IndustryT }) => {
           variant="body1"
           sx={{
             mb: 4,
-            maxWidth: "sm",
             color: "text.secondary",
           }}
         >
@@ -76,7 +74,7 @@ const Industry = ({ industry }: { industry: IndustryT }) => {
   ) : (
     <Box
       sx={{
-        width: "85rem",
+        width: "90%",
         mx: "auto",
         display: "flex",
         gridTemplateColumns: { lg: "1fr 1fr" },
@@ -104,7 +102,6 @@ const Industry = ({ industry }: { industry: IndustryT }) => {
           variant="body1"
           sx={{
             mb: 4,
-            maxWidth: "sm",
             color: "text.secondary",
           }}
         >
