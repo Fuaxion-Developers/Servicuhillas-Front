@@ -184,7 +184,7 @@ const Identity = () => {
                     zIndex: 2,
                     borderRadius: "12px",
                     marginLeft: "-20px",
-                    boxShadow: "-2px 2px 10px #EAC01B",
+                    boxShadow: "2px 2px 10px #EAC01B",
                   }}
                 >
                   <Image
