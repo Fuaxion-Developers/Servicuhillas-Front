@@ -4,51 +4,43 @@ import { Box, Grid2, Typography, Paper, Avatar } from "@mui/material";
 
 const testimonials = [
   {
-    text: "Excelente atención y buenos precios.",
+    text: '"Excelente atención y buenos precios."',
     name: "Bryan Rico P.",
-    role: "Gerente de Compras | Metalúrgica Industrial",
     image: "https://randomuser.me/api/portraits/men/55.jpg",
   },
   {
-    text: "Muy buen servicio y atención",
+    text: '"Muy buen servicio y atención"',
     name: "Cesar Gonzalez",
-    role: "Ingeniero de Producción | Fábrica de Muebles",
     image: "https://randomuser.me/api/portraits/men/74.jpg",
   },
   {
-    text: "Muy buena atención",
+    text: '"Muy buena atención"',
     name: "Rolmar Suarez",
-    role: "Supervisor de Calidad | Industria Papelera",
     image: "https://randomuser.me/api/portraits/men/42.jpg",
   },
   {
-    text: "Muy buen servicio",
+    text: '"Muy buen servicio"',
     name: "Elier Herrera",
-    role: "Especialista en Corte | Metalúrgica Industrial",
     image: "https://randomuser.me/api/portraits/men/45.jpg",
   },
   {
-    text: "Son muy buenos sus productos",
+    text: '"Son muy buenos sus productos"',
     name: "Alvaro Rodriguez",
-    role: "Técnico en Mecanizado | Industria Plástica",
     image: "https://randomuser.me/api/portraits/men/3.jpg",
   },
   {
-    text: "Excelente servicio y buenos materiales",
+    text: '"Excelente servicio y buenos materiales"',
     name: "Carlos ABotache",
-    role: "Jefe de Producción | Fábrica de Herramientas",
     image: "https://randomuser.me/api/portraits/men/16.jpg",
   },
   {
-    text: "Excelente",
+    text: '"Excelente"',
     name: "Alejandro Guerrero",
-    role: "Director Técnico | Industria Automotriz",
     image: "https://randomuser.me/api/portraits/men/23.jpg",
   },
   {
-    text: "Excelente servicio",
+    text: '"Excelente servicio"',
     name: "Alfonso Roa",
-    role: "Ingeniero en Procesos | Fábrica de Equipos de Corte",
     image: "https://randomuser.me/api/portraits/men/10.jpg",
   },
 ];
@@ -73,6 +65,7 @@ const WhyUs = () => {
                 backgroundColor: "#1E1E1E",
                 color: "white",
                 padding: "20px",
+                alignItems: "center",
                 borderRadius: "10px",
                 display: "flex",
                 flexDirection: "column",
@@ -99,9 +92,7 @@ const WhyUs = () => {
                 />
                 <Box>
                   <Typography fontWeight="bold">{testimonial.name}</Typography>
-                  <Typography variant="body2" color="gray">
-                    {testimonial.role}
-                  </Typography>
+                  <Typography variant="body2" color="gray"></Typography>
                 </Box>
               </Box>
             </Paper>
