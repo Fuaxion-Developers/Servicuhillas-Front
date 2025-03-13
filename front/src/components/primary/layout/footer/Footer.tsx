@@ -44,7 +44,7 @@ const Footer = () => {
               mt: { mobile: '2rem', tablet: '0' }, // Margen superior solo en móviles
             }}
           >
-            <Typography variant="body2">
+            <Typography variant="body2" align='center'>
               Fabricación y afilado de cuchillas para la industria del plástico,
               papel, madera, caucho, metal y alimentos. <br /> Servicio de
               rectificadora plana.
