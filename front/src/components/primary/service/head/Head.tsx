@@ -24,10 +24,10 @@ const Head = () => {
       sx={{
         display: 'flex',
         alignItems: 'center',
-        padding: '100px 100px 0px 100px',
-        width: '90%',
+        width: '100%',
         mx: 'auto',
         borderBottom: "2px solid lightgray",
+        paddingBottom: "100px",
         marginBottom: '100px',
       }}
     >
@@ -54,7 +54,6 @@ const Head = () => {
         ml: 0,
         textAlign: "left",
         p: 2,
-        padding: "150px",
       }}>
         <Typography
           variant="h2"

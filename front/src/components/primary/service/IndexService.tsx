@@ -39,7 +39,7 @@ const IndexService = () => {
   return (
     <Box
       sx={{
-        paddingX: "100px",
+        marginTop: "150px",
       }}
     >
       <Head></Head>
