@@ -70,9 +70,12 @@ const Hero = () => {
       <Box>
         <Image
           alt="Productos"
-          src="https://res.cloudinary.com/dseutp7hi/image/upload/v1741187167/Group_18_2_b1hfgt.png"
-          width={400}
+          src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741882210/cuchillas_ecyih8.jpg"
+          width={500}
           height={300}
+          style={{
+            borderRadius: "1.2rem",
+          }}
         ></Image>
       </Box>
     </Box>
