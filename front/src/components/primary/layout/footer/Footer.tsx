@@ -7,61 +7,73 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <Box sx={{ marginX: '-62px' }}>
+    <Box sx={{ mx: '-62px' }}>
       <Box
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          paddingY: '3.6rem',
-          paddingX: '6.0rem',
-          marginTop: '10rem',
-          borderTop:'0.1rem solid #363636',
-          gap: '10rem',
+          py: '3.6rem',
+          px: { mobile: '2rem', tablet: '6rem' }, // Más espacio en tablets/desktop
+          mt: '10rem',
+          borderTop: '0.1rem solid #363636',
+          gap: { mobile: '5rem', tablet: '10rem' }, // Menos gap en móviles
           position: 'relative',
         }}
       >
+        {/* Contenedor Principal */}
         <Box
           sx={{
             display: 'flex',
+            flexDirection: { mobile: 'column', tablet: 'row' }, // Column en móviles, row en tablets+
             justifyContent: 'space-between',
-            alignItems: 'center',
+            alignItems: { mobile: 'center', tablet: 'flex-start' }, // Centrado en móviles
+            textAlign: { mobile: 'center', tablet: 'left' }, // Texto centrado en móviles
           }}
         >
+          {/* Logo */}
           <Box>
             <Logo1 />
           </Box>
+
+          {/* Descripción */}
           <Box
-            sx={{ width: '40rem', display: 'flex', justifyContent: 'center' }}
+            sx={{
+              width: { mobile: '100%', tablet: '40rem' },
+              display: 'flex',
+              justifyContent: 'center',
+              mt: { mobile: '2rem', tablet: '0' }, // Margen superior solo en móviles
+            }}
           >
-            <Typography variant="body2" sx={{ textAlign: 'center' }}>
-              Fabricación y afilado de cuchillas para la industria del plastico,
+            <Typography variant="body2">
+              Fabricación y afilado de cuchillas para la industria del plástico,
               papel, madera, caucho, metal y alimentos. <br /> Servicio de
               rectificadora plana.
             </Typography>
-            <Typography></Typography>
           </Box>
-          <Box>
-            <Typography
-              variant="h4"
-              sx={{ color: '#FBC600', marginBottom: '1rem' }}
-            >
+
+          {/* Información de la Empresa */}
+          <Box sx={{ mt: { mobile: '2rem', tablet: '0' } }}>
+            <Typography variant="h4" sx={{ color: '#FBC600', mb: '1rem' }}>
               Empresa
             </Typography>
             <Typography variant="body2">Cra. 86B No. 41 - 10 Sur</Typography>
             <Typography variant="body2">
-              Tel: 601 193 9965 - 601 293 27 33
+              Tel: 601 293 9965 - 601 293 27 33
             </Typography>
             <Typography variant="body2">Cel: 322789 1682 </Typography>
             <Typography variant="body2">Bogotá, D.C. </Typography>
           </Box>
         </Box>
 
+        {/* Derechos de Autor */}
         <Box
           sx={{
             display: 'flex',
+            flexDirection: { mobile: 'column', tablet: 'row' },
             gap: '1.2rem',
             justifyContent: 'center',
             alignItems: 'center',
+            textAlign: 'center',
           }}
         >
           <Typography variant="body2">
@@ -72,6 +84,7 @@ const Footer = () => {
           </Link>
         </Box>
 
+        {/* Botón de WhatsApp Fijo */}
         <Box
           sx={{
             position: 'fixed',
@@ -90,10 +103,10 @@ const Footer = () => {
                 color: '#fff',
                 backgroundColor: '#25d366',
                 borderRadius: '50%',
-                padding: '0.5rem',
+                p: '0.5rem',
                 boxShadow: '0 0.4rem 0.6rem rgba(0, 0, 0, 0.2)',
-                width: '5rem',
-                height: '5rem',
+                width: { mobile: '4rem', tablet: '5rem' }, // Tamaño menor en móviles
+                height: { mobile: '4rem', tablet: '5rem' },
               }}
             />
           </Link>
