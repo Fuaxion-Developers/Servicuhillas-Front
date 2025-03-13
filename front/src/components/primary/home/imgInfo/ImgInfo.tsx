@@ -71,7 +71,7 @@ const ImgInfo = () => {
             }}
           >
             <Image
-              src="https://res.cloudinary.com/dseutp7hi/image/upload/v1741282080/proartec-3_dx7gip.webp"
+              src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741883183/proartec-3_dx7gip_mosaoz.webp"
               alt="imagen"
               layout="fill"
               objectFit="cover" // Hace que la imagen llene el Box sin distorsionarse
