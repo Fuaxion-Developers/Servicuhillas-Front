@@ -1,0 +1,8 @@
+.circle {
+  width: 550px;  /* Tamaño del círculo */
+  height: 200px;  /* Tamaño del círculo */
+  border-radius: 30%; 
+  background: linear-gradient(135deg, #DFB916 100%, #DFB916 100%);  /* Un degradado suave */
+  transform: translate(-50%, -50%);  /* Ajusta la posición para que quede exactamente centrado */
+
+}
