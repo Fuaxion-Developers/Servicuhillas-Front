@@ -28,7 +28,6 @@ const descriptions: Record<string, string> = {
   `,
 
   paper: `
-    Industria del papel  
     Cuchillas diseñadas para realizar cortes precisos en materiales como papel, cartón y celulosa, garantizando bordes limpios y minimizando el desperdicio. Se fabrican con aceros de alta dureza para resistir el desgaste y la fricción constante en procesos de corte.
 
     - Alta precisión: Garantizan cortes limpios sin desgarres ni imperfecciones.
@@ -39,7 +38,6 @@ const descriptions: Record<string, string> = {
   `,
 
   wood: `
-  Industria de la madera  
   Cuchillas diseñadas para realizar cortes precisos y eficientes en diferentes tipos de madera, desde tableros de fibra hasta troncos macizos. 
   Se fabrican con aceros de alta resistencia y tratamientos especiales que les permiten soportar altas velocidades y esfuerzos sin perder el filo.
 
@@ -51,7 +49,6 @@ const descriptions: Record<string, string> = {
 `,
 
   rubber: `
-Industria del caucho  
 Cuchillas diseñadas para realizar cortes precisos y sin deformaciones en materiales elásticos y resistentes. 
 Se fabrican con aceros de alta dureza y tratamientos especiales para soportar la abrasión y la elasticidad del caucho, 
 garantizando una vida útil prolongada y un rendimiento eficiente en los procesos de producción.
@@ -64,7 +61,6 @@ garantizando una vida útil prolongada y un rendimiento eficiente en los proceso
 `,
 
   metal: `
-Industria metalmecánica  
 Cuchillas diseñadas para cortar y dar forma a metales de distintas durezas con alta precisión y durabilidad. 
 Fabricadas con aceros de alta resistencia y tratamientos térmicos especializados, estas cuchillas garantizan un rendimiento óptimo 
 en entornos de alta exigencia, minimizando el desgaste y optimizando la producción.
@@ -76,8 +72,7 @@ en entornos de alta exigencia, minimizando el desgaste y optimizando la producci
 - Usos comunes: Producción de herramientas y componentes industriales.
 `,
 
-  food: `
-Industria de alimentos  
+  food: ` 
 Cuchillas diseñadas para realizar cortes precisos en productos como carnes, embutidos, pan, frutas, vegetales y otros alimentos procesados. 
 Están fabricadas en acero inoxidable de grado alimenticio, lo que garantiza resistencia a la corrosión, higiene y cumplimiento de normativas sanitarias. 
 Su diseño optimiza la eficiencia del corte y minimiza el desperdicio de producto.
@@ -150,20 +145,39 @@ export default function ProductPage() {
       <Box
         sx={{
           display: "flex",
-          alignItems: "center",
+          alignItems: "flex-start",
           justifyContent: "space-between",
           gap: 4,
         }}
       >
         {/* Texto a la izquierda */}
-        <Box sx={{ flex: 1, textAlign: "left" }}>
-          <Typography variant="h5" fontWeight="bold" color="white">
+        <Box sx={{ textAlign: "left", marginTop: "80px" }}>
+          <Typography variant="h3" fontWeight="bold" color="white">
             Cuchillas para la industria {translatedCategory}
           </Typography>
+
           <Typography
             variant="body1"
-            sx={{ marginTop: "20px", color: "gray", whiteSpace: "pre-line" }}
+            sx={{
+              marginTop: "200px",
+              color: "gray",
+              whiteSpace: "pre-line",
+            }}
           >
+            <Box
+              sx={{
+                display: "inline-block",
+                backgroundColor: "#EAC01B",
+                color: "black",
+                padding: "8px 20px",
+                borderRadius: "8px",
+                fontWeight: "bold",
+                fontSize: "16px",
+                marginBottom: "20px",
+              }}
+            >
+              Descripción
+            </Box>
             {descriptions[category as string] || "Descripción no encontrada."}
           </Typography>
         </Box>
