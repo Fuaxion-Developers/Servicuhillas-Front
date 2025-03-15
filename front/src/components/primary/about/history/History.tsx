@@ -54,9 +54,9 @@ const History = () => {
               decidida a construirse un mejor futuro, y hoy es un ejemplo de
               crecimiento, confianza y compromiso. A partir del trabajo de una
               pareja focalizada, la empresa comenzó en una modesta habitación de
-              su hogar, con una máquina ensamblada personalmente por el uno de
-              ellos. Buscando dar respuesta a las necesidades de diferentes
-              industrías, en lo relacionado con la fabricación, afilado y
+              su hogar, con una máquina ensamblada personalmente por uno de
+              ellos; buscando dar respuesta a las necesidades de diferentes
+              industrias, en lo relacionado con la fabricación, afilado y
               mantenimiento de sus cuchillas.
             </Typography>
             <Typography
@@ -67,14 +67,14 @@ const History = () => {
             >
               Con determinación y esfuerzo, en 2012 se inauguró la sede actual,
               marcando el inicio de una nueva etapa de profesionalismo y
-              expansión. Aunque la base es familiar—con padres e hijos
-              integrados en el equipo gerencial—hoy la empresa cuenta con un
+              expansión. Aunque la base es familiar —con padres e hijos
+              integrados en el equipo gerencial— hoy la empresa cuenta con un
               equipo de más de 10 trabajadores y brinda oportunidades laborales
               a diversos talentos, creando un ambiente de trabajo cálido y de
               confianza. Este entorno humano se refleja en la atención
               personalizada y el don de servicio con el que responden a las
               necesidades del mercado, combinando maquinaria original construida
-              por la familia con equipos a medida fabricados por otros
+              por la familia, con equipos a medida fabricados por otros
               especialistas para garantizar la excelencia en cada proyecto.
             </Typography>
           </Box>

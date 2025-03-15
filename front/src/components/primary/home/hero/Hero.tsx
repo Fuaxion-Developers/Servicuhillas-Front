@@ -35,7 +35,7 @@ const Hero = () => {
         }}
       >
         <Typography variant="h1" sx={{ color: '#EAC01B' }}>
-          Chuchillas industriales
+          Cuchillas industriales
         </Typography>
         <Typography variant="h2">Calidad que corta la diferencia </Typography>
         <Typography variant="body1" sx={{ color: 'text.secondary' }}>

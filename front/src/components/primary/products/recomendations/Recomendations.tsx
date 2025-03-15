@@ -35,11 +35,11 @@ const Recomendations = () => {
       {/* Sección de Texto */}
       <Box sx={{ flex: 1, color: "white", padding: "20px" }}>
         <Typography variant="h4" fontWeight="bold">
-          ¿Por qué elegir ServiCuchillas?
+          ¿Por qué elegir Servicuchillas?
         </Typography>
         <Typography variant="body1" sx={{ marginTop: "10px", opacity: 0.8 }}>
           Convierte tus ideas en resultados precisos con las cuchillas de
-          ServiCuchillas. Ya sea que necesites herramientas de corte para la
+          Servicuchillas. Ya sea que necesites herramientas de corte para la
           industria metalúrgica, papelera, maderera o plástica, nuestras
           cuchillas están diseñadas para ofrecer máxima precisión y durabilidad.
         </Typography>

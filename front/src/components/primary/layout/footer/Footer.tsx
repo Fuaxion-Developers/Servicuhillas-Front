@@ -47,7 +47,7 @@ const Footer = () => {
             <Typography variant="body2" align='center'>
               Fabricación y afilado de cuchillas para la industria del plástico,
               papel, madera, caucho, metal y alimentos. <br /> Servicio de
-              rectificadora plana.
+              rectificadora plana hasta cuatro metros.
             </Typography>
           </Box>
 
@@ -58,7 +58,7 @@ const Footer = () => {
             </Typography>
             <Typography variant="body2">Cra. 86B No. 41 - 10 Sur</Typography>
             <Typography variant="body2">
-              Tel: 601 293 9965 - 601 293 27 33
+              Tel: 601 293 9965
             </Typography>
             <Typography variant="body2">Cel: 322789 1682 </Typography>
             <Typography variant="body2">Bogotá, D.C. </Typography>
@@ -94,7 +94,7 @@ const Footer = () => {
           }}
         >
           <Link
-            href="https://wa.me/573227891682?text=Hola,%20quiero%20más%20información."
+            href="https://wa.me/573227891682?text=Hola,%20quiero%20más%20información%20sobre%20sus%20servicios%20de%20fabricación%20y%20afilado%20de%20cuchillas."
             target="_blank"
             rel="noopener noreferrer"
           >

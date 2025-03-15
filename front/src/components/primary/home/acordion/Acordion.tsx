@@ -15,13 +15,13 @@ const faqData = [
     question:
       '¿Ofrecen fabricación de cuchillas personalizadas?',
     answer:
-      'Sí, diseñamos y fabricamos cuchillas a medida según las necesidades específicas de cada cliente. Podemos adaptar dimensiones, materiales y acabados para garantizar el mejor rendimiento en su proceso productivo.',
+      'Sí, fabricamos cuchillas a medida según las necesidades específicas de cada cliente. Podemos adaptar dimensiones, materiales y acabados para garantizar el mejor rendimiento en su proceso productivo.',
   },
   {
     question:
       '¿Qué materiales utilizan en la fabricación de sus cuchillas?',
     answer:
-      'Trabajamos con aceros de alta resistencia, como acero al carbono, acero inoxidable y aceros aleados con tratamientos térmicos, asegurando mayor durabilidad, precisión y resistencia al desgaste.',
+      'Trabajamos con aceros de alta resistencia, como acero grado herramienta, acero inoxidable y aceros aleados con tratamientos térmicos, asegurando mayor durabilidad, precisión y resistencia al desgaste.',
   },
   {
     question:
