@@ -11,16 +11,16 @@ const statistics = [
   {
     value: "99.8%",
     description:
-      "de nuestros clientes se han vuelto a adquirir nuestros servicios",
+      "de nuestros clientes han vuelto a adquirir nuestros servicios",
     },
     {
-      value: "4.000+",
+      value: "4.000",
       description:
       "cuchillas fabricadas en el último año",
       icon: <ArrowUpwardIcon sx={{ color: "#EAC01B", fontSize: "2rem" }} />,
     },
     {
-      value: "300+",
+      value: "300",
       description:
       "clientes satisfechos en el último año",
       icon: <ArrowUpwardIcon sx={{ color: "#EAC01B", fontSize: "2rem" }} />,
