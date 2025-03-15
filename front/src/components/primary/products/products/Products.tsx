@@ -55,7 +55,7 @@ export default function Products() {
                   }}
                 >
                   <Image
-                    src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741636464/plastic_02_feihyn.jpg"
+                    src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741962352/polipropileno_02_uwo9bg.webp"
                     alt=""
                     layout="fill"
                     objectFit="cover"
