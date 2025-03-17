@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { Box, Button, Grid2, TextField, Typography } from "@mui/material";
 import handleForm from "../../../../utils/handleForm";
 import { useRef, useState } from "react";
@@ -18,7 +18,9 @@ const Form = () => {
   const [errors, setErrors] = useState<FormT>({});
   const [statusBtn, setStatusBtn] = useState(true);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     const userMailCurrent = { ...userMail, [name]: value };
     setUserMail({
@@ -31,7 +33,7 @@ const Form = () => {
 
     setStatusBtn(validateAllFields(userMailCurrent, errorsFromUser));
   };
-  
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -41,23 +43,23 @@ const Form = () => {
       email: userMail.email,
       phone: userMail.phone,
       content: userMail.content,
-    }
+    };
 
     try {
       handleForm(formData);
-      alert("Mensaje enviado")
+      alert("Mensaje enviado");
       setUserMail({
         name: "",
         lastname: "",
         email: "",
         phone: "",
         content: "",
-      })
-    } catch (error) {
-      alert("No se pudo enviar el mensaje")
+      });
+      setStatusBtn(true);
+    } catch {
+      alert("No se pudo enviar el mensaje.");
     }
-
-  }
+  };
 
   return (
     <Box
@@ -66,8 +68,8 @@ const Form = () => {
         display: "flex",
         flexDirection: "column",
         width: "60%",
-        paddingLeft: "100px",
-        paddingRight: "50px",
+        paddingLeft: "10rem",
+        paddingRight: "5rem",
       }}
     >
       <Typography
@@ -76,7 +78,7 @@ const Form = () => {
         color="text.primary"
         gutterBottom
         sx={{
-          marginBottom: "50px",
+          marginBottom: "5rem",
         }}
       >
         Completa el formulario
@@ -101,7 +103,7 @@ const Form = () => {
             <Grid2
               sx={{
                 width: "49%",
-                marginY: "12px",
+                marginY: "1.2rem",
               }}
             >
               <TextField
@@ -112,11 +114,12 @@ const Form = () => {
                 onChange={handleInputChange}
                 value={userMail.name}
               />
+              <Typography>{errors.name}</Typography>
             </Grid2>
             <Grid2
               sx={{
                 width: "49%",
-                marginY: "12px",
+                marginY: "1.2rem",
               }}
             >
               <TextField
@@ -127,6 +130,7 @@ const Form = () => {
                 onChange={handleInputChange}
                 value={userMail.lastname}
               />
+              <Typography>{errors.lastname}</Typography>
             </Grid2>
           </Grid2>
           <Grid2
@@ -140,7 +144,7 @@ const Form = () => {
             <Grid2
               sx={{
                 width: "49%",
-                marginY: "12px",
+                marginY: "1.2rem",
               }}
             >
               <TextField
@@ -157,7 +161,7 @@ const Form = () => {
             <Grid2
               sx={{
                 width: "49%",
-                marginY: "12px",
+                marginY: "1.2rem",
               }}
             >
               <TextField
@@ -191,7 +195,12 @@ const Form = () => {
           </Grid2>
         </Grid2>
         <Box mt={4} sx={{ width: "99%" }} mx="auto">
-          <Button fullWidth variant="contained" type="submit" disabled={statusBtn}>
+          <Button
+            fullWidth
+            variant="contained"
+            type="submit"
+            disabled={statusBtn}
+          >
             Enviar
           </Button>
         </Box>
