@@ -1,10 +1,11 @@
 import IndexContact from '@/components/primary/contact/IndexContact';
+import { Box } from '@mui/material';
 
 const page = () => {
   return (
-    <div>
-      <IndexContact></IndexContact>
-    </div>
+    <Box>
+      <IndexContact/>
+    </Box>
   );
 };
 
