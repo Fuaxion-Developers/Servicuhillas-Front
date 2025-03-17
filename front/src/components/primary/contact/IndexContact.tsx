@@ -7,16 +7,16 @@ import { Box } from "@mui/material";
 const IndexContact = () => {
   return (
     <Box sx={{
-      paddingX: '100px'
+      paddingX: '10rem'
     }}>
-      <Title></Title>
+      <Title/>
       <Box sx={{
         display: 'flex',
       }}>
-        <Form></Form>
-        <Info></Info>
+        <Form/>
+        <Info/>
       </Box>
-      <Map></Map>
+      <Map/>
     </Box>
   );
 };
