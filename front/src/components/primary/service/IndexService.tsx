@@ -42,11 +42,11 @@ const IndexService = () => {
         marginTop: "150px",
       }}
     >
-      <Head></Head>
+      <Head/>
       {industries?.map((industry) => {
-        return <Industry key={industry.number} industry={industry}></Industry>;
+        return <Industry key={industry.number} industry={industry}/>;
       })}
-      <Figures></Figures>
+      <Figures/>
     </Box>
   );
 };
