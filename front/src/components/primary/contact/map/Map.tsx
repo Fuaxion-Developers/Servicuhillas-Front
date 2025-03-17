@@ -5,9 +5,11 @@ const Map = () => {
     <Box
       sx={{
         width: "100%",
-        height: "400px",
+        height: "40rem",
         overflow: "hidden",
-        paddingX: "100px",
+        paddingX: "10rem",
+        marginY: "10rem",
+
       }}
     >
       <iframe

@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { useParams, useRouter } from "next/navigation";
 import { Box, Typography, Button } from "@mui/material";
 import Image from "next/image";
@@ -70,23 +70,23 @@ const categoryImages: Record<string, string> = {
   plastic:
     "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741735447/910c987e-e9c0-4af8-916a-d9b6e3b3e77e_c34i2d.png",
   paper:
-    "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741359735/cuchillas/ifbyi1lexmfsyi8hwm6f.png",
-  wood: "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741735446/cc4599db-1cd6-43f7-bb68-6e046c36029b_kc1kom.png",
+    "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742078755/Papel_1_wmj1kj.png",
+  wood: "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742078753/725d5b25-78a7-421f-b6a9-b430c708c5b5_eciohe.png",
   rubber:
     "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741735447/910c987e-e9c0-4af8-916a-d9b6e3b3e77e_c34i2d.png",
   metal:
-    "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741359738/cuchillas/o9h5lauapb1mwyiylsaw.png",
-  food: "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741359738/cuchillas/ctfhuj48yehxjgzljayy.png",
+    "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742078753/Metalmecanica_qggkft.png",
+  food: "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742078756/28256cce-9b07-4aac-99f5-6196a5c70c1d_h4qoj9.png",
 };
 
 // Mapeo de tamaños de imagen por categoría
 const categoryImageSizes: Record<string, { width: number; height: number }> = {
   plastic: { width: 500, height: 110 },
-  paper: { width: 500, height: 200 },
+  paper: { width: 480, height: 480 },
   wood: { width: 480, height: 480 },
   rubber: { width: 520, height: 160 },
   metal: { width: 500, height: 500 },
-  food: { width: 460, height: 300 },
+  food: { width: 480, height: 480 },
 };
 
 export default function ProductPage() {

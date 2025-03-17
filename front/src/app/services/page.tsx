@@ -1,10 +1,11 @@
 import IndexService from '@/components/primary/service/IndexService';
+import { Box } from '@mui/material';
 
 const page = () => {
   return (
-    <div>
-      <IndexService></IndexService>
-    </div>
+    <Box>
+      <IndexService/>
+    </Box>
   );
 };
 

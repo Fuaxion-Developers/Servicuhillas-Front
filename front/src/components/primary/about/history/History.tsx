@@ -1,5 +1,4 @@
-import { Box, Typography, Grid2 } from "@mui/material";
-import Image from "next/image";
+import { Box, Typography } from "@mui/material";
 
 const History = () => {
   return (
@@ -47,7 +46,7 @@ const History = () => {
               variant="body1"
               sx={{
                 color: "text.secondary",
-                marginBottom: "20px",
+                marginBottom: "2rem",
               }}
             >
               Servicuchillas LTDA nació en el 2007, del sueño de una familia

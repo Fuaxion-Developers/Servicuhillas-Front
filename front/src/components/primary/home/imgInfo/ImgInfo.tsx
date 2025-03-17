@@ -35,7 +35,7 @@ const ImgInfo = () => {
     <Box
       sx={{
         textAlign: "center",
-        width: "80vw",
+        width: "90vw",
         mx: "auto",
         marginTop: "15rem",
       }}
@@ -47,18 +47,23 @@ const ImgInfo = () => {
           justifyContent: "center",
           paddingX: "3rem",
         }}
-        >
+      >
         <Box
           sx={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
           }}
-        >
+          >
           <Box
             sx={{
               position: "relative",
-              width: "25vw",
+              width: {
+                mobile: "0",
+                tablet: "0",
+                laptop: "25vw",
+                desktop: "25vw",
+              },
               height: "30vw",
               overflow: "hidden",
               justifyContent: "center",
@@ -66,28 +71,36 @@ const ImgInfo = () => {
               zIndex: 2,
               borderRadius: "1rem",
               marginRight: "-5rem",
-              // top: { mobile: '', tablets: '', laptop: '25rem', desktop: '' },
-              // left: { mobile: '', tablets: '', laptop: '-2rem', desktop: '' },
             }}
-          >
+            >
             <Image
               src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741883183/proartec-3_dx7gip_mosaoz.webp"
               alt="imagen"
-              layout="fill"
-              objectFit="cover" // Hace que la imagen llene el Box sin distorsionarse
-              objectPosition="center" // Centra la imagen dentro del Box
+              fill
               style={{
                 borderRadius: "12px",
+                objectFit: "cover", // Hace que la imagen llene el Box sin distorsionarse
+                objectPosition: "center", // Centra la imagen dentro del Box
               }}
               // width={450}
               // height={550}
-            />
+              />
           </Box>
           <Box
             sx={{
-              width: "70%",
+              width: {
+                mobile: "100%",
+                tablet: "100%",
+                laptop: "70%",
+                desktop: "70%",
+              },
               background: "#282F3C",
-              padding: "5rem 5rem 5rem 10rem",
+              padding: {
+                mobile: "2rem",
+                tablet: "2rem",
+                laptop: "5rem 5rem 5rem 10rem",
+                desktop: "5rem 5rem 5rem 10rem",
+              },
               borderRadius: "1rem",
               display: "flex",
               flexDirection: "column",
