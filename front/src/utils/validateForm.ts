@@ -1,6 +1,6 @@
 import { FormT } from "../types/email";
 
-export const validateForm = (inputs: any) => {
+export const validateForm = (inputs: FormT) => {
   const errors: FormT = {};
 
   if (
@@ -30,7 +30,7 @@ export const validateForm = (inputs: any) => {
     }
 
     const textRegex = /^[\w\s.,;:'"?!()\-]+$/;
-    if (!textRegex.test(inputs.meesage)) {
+    if (!textRegex.test(inputs.content)) {
       errors.content = "No es un mensaje válido.";
     }
   }
