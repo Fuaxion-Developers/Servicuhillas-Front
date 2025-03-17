@@ -7,8 +7,8 @@ const IndexAbout = () => {
     <Box sx={{
       paddingTop: "12rem"
     }}>
-      <Identity></Identity>
-      <History></History>
+      <Identity/>
+      <History/>
     </Box>
   )
 }
