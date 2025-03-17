@@ -1,4 +1,3 @@
-import React from "react";
 import { Typography, Box, Grid2 } from "@mui/material";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
@@ -12,18 +11,16 @@ const statistics = [
     value: "99.8%",
     description:
       "de nuestros clientes han vuelto a adquirir nuestros servicios",
-    },
-    {
-      value: "4.000",
-      description:
-      "cuchillas fabricadas en el último año",
-      icon: <ArrowUpwardIcon sx={{ color: "#EAC01B", fontSize: "2rem" }} />,
-    },
-    {
-      value: "300",
-      description:
-      "clientes satisfechos en el último año",
-      icon: <ArrowUpwardIcon sx={{ color: "#EAC01B", fontSize: "2rem" }} />,
+  },
+  {
+    value: "4.000",
+    description: "cuchillas fabricadas en el último año",
+    icon: <ArrowUpwardIcon sx={{ color: "#EAC01B", fontSize: "2rem" }} />,
+  },
+  {
+    value: "300",
+    description: "clientes satisfechos en el último año",
+    icon: <ArrowUpwardIcon sx={{ color: "#EAC01B", fontSize: "2rem" }} />,
   },
 ];
 
@@ -32,6 +29,12 @@ const Numbers = () => {
     <Box
       sx={{
         display: "flex",
+        flexDirection: {
+          mobile: "column",
+          tablet: "column",
+          laptop: "row",
+          desktop: "row",
+        },
         paddingTop: "15rem",
         justifyContent: "space-around",
         alignItems: "center",
@@ -43,7 +46,18 @@ const Numbers = () => {
           display: "flex",
           flexDirection: "column",
           gap: "5rem",
-          width: "70rem",
+          width: {
+            mobile: "95%",
+            tablet: "95%",
+            laptop: "70rem",
+            desktop: "70rem",
+          },
+          paddingBottom: {
+            mobile: "2rem",
+            tablet: "3rem",
+            laptop: "0",
+            desktop: "0",
+          },
         }}
       >
         <Box>
@@ -61,16 +75,48 @@ const Numbers = () => {
         </Box>
       </Box>
 
-      <Grid2 container sx={{ width: "60rem" }}>
+      <Grid2
+        container
+        sx={{
+          width: {
+            mobile: "100%",
+            tablet: "100%",
+            laptop: "60rem",
+            desktop: "60rem",
+          },
+        }}
+      >
         {statistics.map((stat, index) => (
           <Grid2
-            size={6}
+            size={{ mobile: 12, tablet: 12, laptop: 6, desktop: 6 }}
             key={index}
             sx={{
               padding: "3.6rem",
-              borderRight: index % 2 === 0 ? 2 : 0, // Borde derecho en los elementos impares
-              borderBottom: index < 2 ? 2 : 0, // Borde inferior en los elementos de la primera fila
+              margin: {
+                mobile: "2rem",
+                tablet: "2rem",
+                laptop: "0",
+                desktop: "0",
+              },
+              borderRight: {
+                mobile: 2,
+                tablet: 2,
+                laptop: index % 2 === 0 ? 2 : 0,
+                desktop: index % 2 === 0 ? 2 : 0,
+              },
+              borderBottom: {
+                mobile: 2,
+                tablet: 2,
+                laptop: index < 2 ? 2 : 0,
+                desktop: index < 2 ? 2 : 0,
+              },
               borderColor: "#848C8E",
+              size: {
+                mobile: 12,
+                tablet: 12,
+                laptop: 6,
+                desktop: 6,
+              },
             }}
           >
             <Box sx={{ display: "flex", alignItems: "center" }}>
