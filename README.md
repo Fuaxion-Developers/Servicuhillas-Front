@@ -1,1 +1,3 @@
-# Servicuhillas-Front
+# Servicuhillas
+
+Servicuchillas es una empresa de tradición familiar, comprometida con la fabricación y mantenimiento de cuchillas industriales para las industrias del plástico, papel, madera, caucho, metal y alimentos. Durante más de 15 años, hemos construido un camino basado en la calidad, el esfuerzo y la confianza, consolidándonos como una empresa competitiva a nivel nacional. Nuestro compromiso va más allá de los productos: creemos en el valor de las relaciones cercanas y en el trabajo bien hecho, siempre con un enfoque humano y responsable.
