@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { useParams, useRouter } from "next/navigation";
 import { Box, Typography, Button } from "@mui/material";
 import Image from "next/image";
@@ -68,12 +68,13 @@ const descriptions: Record<string, string> = {
 // Mapeo de imágenes por categoría
 const categoryImages: Record<string, string> = {
   plastic:
-    "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741735447/910c987e-e9c0-4af8-916a-d9b6e3b3e77e_c34i2d.png",
+    "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742426431/Plastico02_voe5vm.png",
   paper:
     "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742078755/Papel_1_wmj1kj.png",
   wood: "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742078753/725d5b25-78a7-421f-b6a9-b430c708c5b5_eciohe.png",
   rubber:
-    "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741735447/910c987e-e9c0-4af8-916a-d9b6e3b3e77e_c34i2d.png",
+    "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742515264/cuchis_sin_fondo_o2ls1m.png",
+    // "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742515663/cuchis_sin_fondo_2_s9g8om.png",
   metal:
     "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742078753/Metalmecanica_qggkft.png",
   food: "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742078756/28256cce-9b07-4aac-99f5-6196a5c70c1d_h4qoj9.png",
@@ -81,12 +82,12 @@ const categoryImages: Record<string, string> = {
 
 // Mapeo de tamaños de imagen por categoría
 const categoryImageSizes: Record<string, { width: number; height: number }> = {
-  plastic: { width: 500, height: 110 },
-  paper: { width: 480, height: 480 },
+  plastic: { width: 421, height: 593 },
+  paper: { width: 454, height: 533 },
   wood: { width: 480, height: 480 },
-  rubber: { width: 520, height: 160 },
-  metal: { width: 500, height: 500 },
-  food: { width: 480, height: 480 },
+  rubber: { width: 534, height: 535 },
+  metal: { width: 521, height: 521 },
+  food: { width: 546, height: 546 },
 };
 
 export default function ProductPage() {
@@ -101,7 +102,13 @@ export default function ProductPage() {
   return (
     <Box
       sx={{
-        padding: "8%",
+        width: "100%",
+        padding: {
+          mobile: "100px 0 0 0",
+          tablet: "100px 0 0 0",
+          laptop: "8%",
+          desktop: "8%",
+        },
         display: "flex",
         flexDirection: "column",
         gap: 4,
@@ -125,13 +132,36 @@ export default function ProductPage() {
       <Box
         sx={{
           display: "flex",
+          flexDirection: {
+            mobile: "column",
+            tablet: "column",
+            laptop: "row",
+            desktop: "row",
+          },
+          width: "100%",
           alignItems: "flex-start",
           justifyContent: "space-between",
           gap: 4,
         }}
       >
         {/* Texto a la izquierda */}
-        <Box sx={{ textAlign: "left", marginTop: "80px" }}>
+        <Box
+          sx={{
+            textAlign: "left",
+            marginTop: {
+              mobile: 0,
+              tablet: 0,
+              laptop: "80px",
+              desktop: "80px",
+            },
+            width: {
+              mobile: "100%",
+              tablet: "100%",
+              laptop: "60%",
+              desktop: "60%",
+            },
+          }}
+        >
           <Typography variant="h3" fontWeight="bold" color="white">
             Cuchillas para la industria {translatedCategory}
           </Typography>
@@ -139,7 +169,12 @@ export default function ProductPage() {
           <Typography
             variant="body1"
             sx={{
-              marginTop: "200px",
+              marginTop: {
+                mobile: "80px",
+                tablet: "80px",
+                laptop: "200px",
+                desktop: "200px",
+              },
               color: "gray",
               whiteSpace: "pre-line",
             }}
@@ -163,13 +198,25 @@ export default function ProductPage() {
         </Box>
 
         {/* Imagen a la derecha con tamaño dinámico */}
-        <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
+        <Box
+          sx={{
+            flex: 1,
+            display: "flex",
+            justifyContent: "flex-end",
+            width: {
+              mobile: "100%",
+              tablet: "100%",
+              laptop: "40%",
+              desktop: "40%",
+            },
+          }}
+        >
           <Image
             src={imageUrl}
             alt={`Cuchillas para la industria ${translatedCategory}`}
             width={width}
             height={height}
-            style={{ borderRadius: "12px" }}
+            style={{ borderRadius: "12px", width: "100%", height: "auto" }}
           />
         </Box>
       </Box>

@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
-import Grid from "@mui/material/Grid";
 import BuildOutlinedIcon from "@mui/icons-material/BuildOutlined";
 import DashboardOutlinedIcon from "@mui/icons-material/DashboardOutlined";
 import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
@@ -34,15 +33,18 @@ const ImgInfo = () => {
   return (
     <Box
       sx={{
+        // display: "flex",
+        // justifyContent: "center",
         textAlign: "center",
-        width: "90vw",
+        width: "100%",
         mx: "auto",
-        marginTop: "15rem",
+        marginTop: {
+          mobile: "5rem",
+          tablet: "10rem",
+        },
       }}
     >
-      <Grid
-        container
-        spacing={4}
+      <Box
         sx={{
           justifyContent: "center",
           paddingX: "3rem",
@@ -60,8 +62,6 @@ const ImgInfo = () => {
               position: "relative",
               width: {
                 mobile: "0",
-                tablet: "0",
-                laptop: "25vw",
                 desktop: "25vw",
               },
               height: "30vw",
@@ -70,7 +70,10 @@ const ImgInfo = () => {
               alignContent: "center",
               zIndex: 2,
               borderRadius: "1rem",
-              marginRight: "-5rem",
+              marginRight: {
+                mobile: "0",
+                desktop: "-5rem",
+              },
             }}
             >
             <Image
@@ -82,24 +85,18 @@ const ImgInfo = () => {
                 objectFit: "cover", // Hace que la imagen llene el Box sin distorsionarse
                 objectPosition: "center", // Centra la imagen dentro del Box
               }}
-              // width={450}
-              // height={550}
               />
           </Box>
           <Box
             sx={{
               width: {
                 mobile: "100%",
-                tablet: "100%",
-                laptop: "70%",
                 desktop: "70%",
               },
               background: "#282F3C",
               padding: {
                 mobile: "2rem",
-                tablet: "2rem",
                 laptop: "5rem 5rem 5rem 10rem",
-                desktop: "5rem 5rem 5rem 10rem",
               },
               borderRadius: "1rem",
               display: "flex",
@@ -136,7 +133,7 @@ const ImgInfo = () => {
             ))}
           </Box>
         </Box>
-      </Grid>
+      </Box>
     </Box>
   );
 };

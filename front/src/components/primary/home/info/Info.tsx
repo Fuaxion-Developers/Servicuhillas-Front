@@ -35,7 +35,11 @@ const Info = () => {
           laptop: "row",
           desktop: "row",
         },
-        paddingTop: "15rem",
+        paddingTop: {
+          mobile: "5rem",
+          tablet: "10rem",
+          laptop: "15rem",
+        },
         justifyContent: "space-around",
       }}
     >

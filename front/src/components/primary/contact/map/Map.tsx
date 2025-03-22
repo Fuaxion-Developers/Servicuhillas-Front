@@ -5,11 +5,15 @@ const Map = () => {
     <Box
       sx={{
         width: "100%",
-        height: "40rem",
+        height: {
+          mobile: "30rem",
+          tablet: "50rem",
+        },
         overflow: "hidden",
-        paddingX: "10rem",
-        marginY: "10rem",
-
+        marginY: {
+          mobile: "5rem",
+          tablet: "10rem",
+        },
       }}
     >
       <iframe

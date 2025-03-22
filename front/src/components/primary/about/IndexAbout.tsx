@@ -5,7 +5,13 @@ import Identity from './identity/Identity'
 const IndexAbout = () => {
   return (
     <Box sx={{
-      paddingTop: "12rem"
+      width: "90%",
+      mx: "auto",
+      paddingTop: "12rem",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
     }}>
       <Identity/>
       <History/>

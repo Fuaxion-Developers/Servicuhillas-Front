@@ -28,6 +28,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
+  padding: 0 3vw; /* Padding por defecto en móviles */
 }
 
 /* body {

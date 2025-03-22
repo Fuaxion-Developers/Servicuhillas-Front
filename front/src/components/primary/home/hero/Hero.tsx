@@ -1,19 +1,28 @@
-// import Circle1 from '@/components/secondary/circles/circles1/Circle1';
+"use client"
 import { Box, Button, Typography } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [screenWidth, setScreenWidth] = useState<number>(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Ejecutar al cargar
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <Box
       sx={{
-        marginX: {
-          mobile: "auto",
-          tablet: "auto",
-          laptop: "15rem",
-          desktop: "15rem",
-        },
+        width: "100%",
+        mx: "auto",
         display: "flex",
         flexDirection: {
           mobile: "column",
@@ -100,19 +109,24 @@ const Hero = () => {
             desktop: "35rem",
           },
           borderRadius: "1.2rem",
-          boxShadow: "2px 2px 10px #EAC01B",
           overflow: "hidden",
         }}
       >
         <Image
           alt="Productos"
-          src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742078756/Todas_1_otb35i.png"
+          src={
+            screenWidth >= 1440
+              ? "https://res.cloudinary.com/dzhh3k5kj/image/upload/a_-90/v1742250592/Todas_1_dpkusj.png"
+              : screenWidth >= 1024
+              ? "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742250592/Todas_1_dpkusj.png"
+              : "https://res.cloudinary.com/dzhh3k5kj/image/upload/a_-90/v1742250592/Todas_1_dpkusj.png"
+          }
           width={500}
           height={300}
           style={{
             width: "100%", // Hace que la imagen se adapte al contenedor
             height: "100%", // Mantiene la proporción
-            objectFit: "cover", // Evita la distorsión y llena el box
+            objectFit: "contain", // Evita la distorsión y llena el box
           }}
         ></Image>
       </Box>

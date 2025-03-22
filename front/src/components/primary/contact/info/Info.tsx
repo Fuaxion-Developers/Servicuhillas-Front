@@ -36,10 +36,21 @@ const Info = () => {
   return (
     <Box
       sx={{
-        maxWidth: "45%",
+        width: {
+          mobile: "100%",
+          laptop: "40%",
+        },
         mx: "auto",
-        paddingRight: "100px",
-        paddingLeft: "50px",
+        // paddingRight: "100px",
+        paddingLeft: {
+          mobile: "0",
+          laptop: "5rem",
+        },
+        marginTop: {
+          mobile: "5rem",
+          tablet: "10rem",
+          laptop: "0",
+        },
       }}
     >
       {sections.map((section, index) => (

@@ -47,7 +47,7 @@ const testimonials = [
 
 const WhyUs = () => {
   return (
-    <Box sx={{ padding: "25px", textAlign: "center" }}>
+    <Box sx={{ padding: "5rem 2.5rem", textAlign: "center" }}>
       <Typography
         variant="h4"
         fontWeight="bold"
@@ -59,7 +59,14 @@ const WhyUs = () => {
 
       <Grid2 container spacing={3} justifyContent="center">
         {testimonials.map((testimonial, index) => (
-          <Grid2 size={3} key={index}>
+          <Grid2 size={3} key={index} sx={{
+            width: {
+              mobile: "100%",
+              tablet: "45%",
+              laptop: "30%",
+              desktop: "20%",
+            },
+          }}>
             <Paper
               sx={{
                 backgroundColor: "#1E1E1E",

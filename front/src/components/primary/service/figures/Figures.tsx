@@ -2,7 +2,7 @@ import { Box, Typography, Grid2 } from "@mui/material";
 
 const Figures = () => {
   return (
-    <Box sx={{ width: "90%", mx: "auto" }}>
+    <Box sx={{ width: "100%", mx: "auto" }}>
       <Box sx={{ maxWidth: "600px", textAlign: "left", ml: 0, mb: 6 }}>
         <Typography
           variant="h4"
@@ -22,21 +22,38 @@ const Figures = () => {
 
       <Box sx={{
         display: "flex",
+        flexDirection: {
+          mobile: "column",
+          tablet: "row",
+        },
         alignItems: "center",
       }}>
         <Box
           sx={{
-            width: "30%",
+            width: {
+              mobile: "100%",
+              tablet: "30%",
+            },
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            borderRight: "2px solid lightgray",
+            borderRight: {
+              mobile: "none",
+              tablet: "2px solid lightgray",
+            },
+            borderBottom: {
+              mobile: "2px solid lightgray",
+              tablet: "none",
+            },
             pr: 4,
+            paddingBottom: {
+              mobile: "1rem",
+              tablet: "0",
+            },
           }}
         >
-          <Box sx={{
-          }}>
+          <Box>
             <Typography
               variant="h2"
               fontWeight="bold"
@@ -54,14 +71,27 @@ const Figures = () => {
 
         <Box
           sx={{
-            width: "70%",
+            width: {
+              mobile: "100%",
+              tablet: "70%",
+            },
             display: "flex",
-            justifyContent: "space-around",
+            justifyContent: {
+              mobile: "space-between",
+              tablet: "space-around",
+            },
+            paddingTop: {
+              mobile: "1rem",
+              tablet: "0",
+            },
           }}
         >
           <Grid2
             sx={{
-              width: "30%",
+              width: {
+                mobile: "30%",
+                tablet: "20%",
+              },
             }}
           >
             <Typography variant="h4" fontWeight="bold" color="#EAC01B">
@@ -73,7 +103,10 @@ const Figures = () => {
           </Grid2>
           <Grid2
             sx={{
-              width: "30%",
+              width: {
+                mobile: "30%",
+                tablet: "20%",
+              },
             }}
           >
             <Typography variant="h4" fontWeight="bold" color="#EAC01B">
@@ -85,7 +118,10 @@ const Figures = () => {
           </Grid2>
           <Grid2
             sx={{
-              width: "30%",
+              width: {
+                mobile: "30%",
+                tablet: "20%",
+              },
             }}
           >
             <Typography variant="h4" fontWeight="bold" color="#EAC01B">

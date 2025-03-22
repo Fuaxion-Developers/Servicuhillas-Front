@@ -39,7 +39,14 @@ const IndexService = () => {
   return (
     <Box
       sx={{
-        marginTop: "150px",
+        marginTop: {
+          mobile: "10rem",
+          tablet: "10rem",
+          laptop: "15rem",
+          desktop: "15rem",
+        },
+        width: "90%",
+        mx: "auto",
       }}
     >
       <Head/>

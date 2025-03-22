@@ -19,12 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body style={{ padding: '0 6.2rem' }}>
+      <body>
         <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <Navbar></Navbar>
+          <CssBaseline/>
+          <Navbar/>
           {children}
-          <Footer></Footer>
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>

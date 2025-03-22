@@ -3,7 +3,9 @@ import { Box, Typography } from "@mui/material";
 const Title = () => {
   return (
     <Box textAlign="center" sx={{
-        padding: '100px'
+      width: "100%",
+      paddingTop: '10rem',
+      marginBottom: "5rem",
     }}>
       <Typography
         variant="h2"

@@ -13,7 +13,7 @@ const Head = () => {
 
       const pauseTimeout = setTimeout(() => {
         video.pause();
-      }, 6320);
+      }, 7000);
 
       return () => clearTimeout(pauseTimeout);
     }
@@ -23,9 +23,15 @@ const Head = () => {
     <Box
       sx={{
         display: 'flex',
+        flexDirection: {
+          mobile: "column",
+          tablet: "column",
+          laptop: "row",
+          dektop: "row",
+        },
         alignItems: 'center',
         width: '100%',
-        mx: 'auto',
+        mx: "auto",
         borderBottom: "2px solid lightgray",
         paddingBottom: "100px",
         marginBottom: '100px',
@@ -33,16 +39,16 @@ const Head = () => {
     >
       <Box
         sx={{
-          width: "30%",
-          maxWidth: "800px",
-          mx: "auto",
+          width: {
+            mobile: "100%",
+            laptop: "40%",
+          },
           overflow: "hidden",
-          marginLeft: '150px'
         }}
       >
         <video ref={videoRef} width="100%" autoPlay muted>
           <source
-            src="https://res.cloudinary.com/dkobjvdgn/video/upload/v1741320354/0001-0160_iqmszg.mp4"
+            src="https://res.cloudinary.com/dzhh3k5kj/video/upload/v1742551250/0001-0200_dentado1_irjtmp.mp4"
             type="video/mp4"
           />
           Tu navegador no soporta el video.
@@ -50,10 +56,16 @@ const Head = () => {
       </Box>
 
       <Box sx={{
-        maxWidth: "60%",
+        width: {
+          mobile: "100%",
+          laptop: "60%",
+        },
         ml: 0,
         textAlign: "left",
-        p: 2,
+        marginLeft: {
+          mobile: "0",
+          laptop: "5rem",
+        },
       }}>
         <Typography
           variant="h2"

@@ -105,7 +105,10 @@ export default function AccordionUsage() {
           laptop: "row",
           desktop: "row",
         },
-        paddingTop: "15rem",
+        marginTop: {
+          mobile: "5rem",
+          tablet: "10rem",
+        },
         paddingBottom: "0.5rem",
         justifyContent: "space-around",
       }}
