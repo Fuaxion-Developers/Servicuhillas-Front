@@ -1,11 +1,11 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Box, Typography, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Logo from "@/assets/svg/Logo.svg";
+import Image from "next/image";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -22,6 +22,19 @@ const Navbar = () => {
     { name: "Historia", path: "/about" },
     { name: "Contacto", path: "/contact" },
   ];
+
+  const [screenWidth, setScreenWidth] = useState<number>(0);
+  
+    useEffect(() => {
+      const handleResize = () => {
+        setScreenWidth(window.innerWidth);
+      };
+  
+      window.addEventListener("resize", handleResize);
+      handleResize(); // Ejecutar al cargar
+  
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
   return (
     <Box
@@ -59,7 +72,17 @@ const Navbar = () => {
           width: "100%",
         }}
       >
-        <Logo />
+        <Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start" }}>
+          <Image
+            src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742654501/Logo_sugjvy.svg"
+            alt="Cuchillas industriales"
+            width={252}
+            height={32}
+            style={{
+              width: screenWidth <= 768 ? "80%" : "100%",
+            }}
+          />
+        </Box>
         <Box sx={{ display: { mobile: "block", laptop: "none" } }}>
           <IconButton onClick={toggleMenu} sx={{ color: "#fff" }}>
             {open ? <CloseIcon /> : <MenuIcon />}
