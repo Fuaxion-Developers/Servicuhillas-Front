@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'SERVICUCHILLAS',
   description:
     'Empresa especializada en la fabricación, mantenimiento y afilado de cuchillas industriales para las industrias del plástico, papel, madera, caucho, metal y alimentos.',
+  icons: {
+    icon: '/icon.svg',
+  }
 };
 
 

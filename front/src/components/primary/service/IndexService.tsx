@@ -30,7 +30,6 @@ const IndexService = () => {
   useEffect(() => {
     const getData = async () => {
       const data = await fetchData();
-      console.log(data);
       setIndustries(data);
     };
     getData();

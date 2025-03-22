@@ -4,17 +4,13 @@ const nextConfig: NextConfig = {
   images: {
     domains: ['res.cloudinary.com'], // Agrega el dominio de Cloudinary
   },
-  experimental: {
-    turbo: {
-      rules: {
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
-          as: '*.ts',
-        },
-      },
-    },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
+    return config;
   },
 };
-
 
 export default nextConfig;
