@@ -1,14 +1,29 @@
+"use client";
 import { Box, Typography } from "@mui/material";
+import { useState, useEffect } from "react";
 
 const History = () => {
+  const [screenWidth, setScreenWidth] = useState<number>(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Ejecutar al cargar
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <Box
       sx={{
-        width: "90%",
+        width: "100%",
+        mx: "auto",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        mx: "auto",
         paddingTop: "10rem",
       }}
     >
@@ -28,18 +43,30 @@ const History = () => {
         sx={{
           width: "100%",
           display: "flex",
+          flexDirection: {
+            mobile: "column",
+            laptop: "row",
+          },
         }}
       >
         <Box
           sx={{
+            width: {
+              mobile: "100%",
+              laptop: "80%",
+            },
             mx: "auto",
-            width: "70%",
           }}
         >
           <Box
             sx={{
               alignItems: "center",
               paddingX: "2rem",
+              width: "100%",
+              marginBottom: {
+                mobile: "3rem",
+                laptop: "0",
+              },
             }}
           >
             <Typography
@@ -80,7 +107,10 @@ const History = () => {
         </Box>
         <Box
           sx={{
-            width: "30%",
+            width: {
+              mobile: "80%",
+              laptop: "30%",
+            },
             aspectRatio: "16/9",
             overflow: "hidden", // Para evitar que se desborde el contenido
             borderRadius: "1.2rem",
@@ -88,7 +118,7 @@ const History = () => {
             alignItems: "center",
             justifyContent: "center",
             position: "relative",
-            marginX: "2rem",
+            marginX: "auto",
           }}
         >
           <video
@@ -99,14 +129,21 @@ const History = () => {
               width: "100vh",
               height: "100vw",
               objectFit: "contain", // O "contain", según prefieras
-              transform: "translateY(10%) rotate(270deg)", // Rota 270 grados
+              transform:
+                screenWidth >= 1440
+                  ? "translateY(30rem) translateX(8rem) scale(0.7)"
+                  : screenWidth >= 1024
+                  ? "translateY(25rem) translateX(7rem)"
+                  : screenWidth >= 768
+                  ? "translateY(30rem) translateX(4.2rem) scale(1.5)"
+                  : "translateY(20rem) translateX(5rem) scale(2)",
               transformOrigin: "center", // Gira desde el centro
               borderRadius: "1.2rem",
               position: "absolute",
             }}
           >
             <source
-              src="https://res.cloudinary.com/dzhh3k5kj/video/upload/v1741747164/2025-03-11_21-36-38_elyj1p.mp4"
+              src="https://res.cloudinary.com/dzhh3k5kj/video/upload/a_-90/v1741747164/2025-03-11_21-36-38_elyj1p.mp4"
               type="video/mp4"
             />
             Tu navegador no soporta el video.

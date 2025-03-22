@@ -1,12 +1,11 @@
-
-import ProductPage from '../../../components/primary/products/productsPage/ProductsPage'
+import ProductPage from "@/components/primary/productsPage/ProductsPage"
 
 const page = () => {
   return (
     <div>
-      <ProductPage></ProductPage>
+      <ProductPage/>
     </div>
   )
 }
 
-export default page
+export default page;

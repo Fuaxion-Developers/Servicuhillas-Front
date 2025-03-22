@@ -60,7 +60,7 @@ const Navbar = () => {
         }}
       >
         <Logo />
-        <Box sx={{ display: { mobile: "block", tablet: "none" } }}>
+        <Box sx={{ display: { mobile: "block", laptop: "none" } }}>
           <IconButton onClick={toggleMenu} sx={{ color: "#fff" }}>
             {open ? <CloseIcon /> : <MenuIcon />}
           </IconButton>
@@ -75,40 +75,31 @@ const Navbar = () => {
           transition: "max-height 0.7s ease-in-out", // Animación más lenta
           display: {
             mobile: open ? "flex" : "none",
-            tablet: open ? "flex" : "none",
             laptop: "flex",
-            desktop: "flex",
           },
           flexDirection: {
             mobile: "column",
-            tablet: "column",
             laptop: "row",
-            desktop: "row",
           },
           justifyContent: {
             mobile: "",
-            tablet: "",
             laptop: "space-between",
-            desktop: "space-between",
           },
           gap: "1rem",
           alignItems: {
             mobile: "start",
-            tablet: "start",
             laptop: "center",
-            desktop: "center",
           },
           width: {
             mobile: "100%",
-            tablet: "100%",
-            laptop: "50%",
+            laptop: "60%",
             desktop: "50%",
           },
           marginTop: open ? "1rem" : "0",
         }}
       >
         {items.map((item) => (
-          <Link key={item.name} href={item.path}>
+          <Link key={item.name} href={item.path} onClick={() => setOpen(false)}>
             <Typography
               variant="caption1"
               sx={{

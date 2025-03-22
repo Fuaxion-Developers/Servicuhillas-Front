@@ -31,11 +31,12 @@ const Numbers = () => {
         display: "flex",
         flexDirection: {
           mobile: "column",
-          tablet: "column",
-          laptop: "row",
           desktop: "row",
         },
-        paddingTop: "15rem",
+        marginTop: {
+          mobile: "5rem",
+          tablet: "10rem",
+        },
         justifyContent: "space-around",
         alignItems: "center",
         position: "relative",
@@ -48,14 +49,12 @@ const Numbers = () => {
           gap: "5rem",
           width: {
             mobile: "95%",
-            tablet: "95%",
-            laptop: "70rem",
-            desktop: "70rem",
+            desktop: "45%",
           },
           paddingBottom: {
             mobile: "2rem",
             tablet: "3rem",
-            laptop: "0",
+            laptop: "3rem",
             desktop: "0",
           },
         }}
@@ -80,9 +79,7 @@ const Numbers = () => {
         sx={{
           width: {
             mobile: "100%",
-            tablet: "100%",
-            laptop: "60rem",
-            desktop: "60rem",
+            desktop: "45%",
           },
         }}
       >
@@ -94,29 +91,17 @@ const Numbers = () => {
               padding: "3.6rem",
               margin: {
                 mobile: "2rem",
-                tablet: "2rem",
                 laptop: "0",
-                desktop: "0",
               },
               borderRight: {
                 mobile: 2,
-                tablet: 2,
                 laptop: index % 2 === 0 ? 2 : 0,
-                desktop: index % 2 === 0 ? 2 : 0,
               },
               borderBottom: {
                 mobile: 2,
-                tablet: 2,
                 laptop: index < 2 ? 2 : 0,
-                desktop: index < 2 ? 2 : 0,
               },
               borderColor: "#848C8E",
-              size: {
-                mobile: 12,
-                tablet: 12,
-                laptop: 6,
-                desktop: 6,
-              },
             }}
           >
             <Box sx={{ display: "flex", alignItems: "center" }}>

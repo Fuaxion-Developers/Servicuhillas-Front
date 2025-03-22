@@ -7,11 +7,21 @@ import { Box } from "@mui/material";
 const IndexContact = () => {
   return (
     <Box sx={{
-      paddingX: '10rem'
+      width: "90%",
+      mx: "auto",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
     }}>
       <Title/>
       <Box sx={{
         display: 'flex',
+        flexDirection: {
+          mobile: "column",
+          laptop: "row",
+        },
+        width: "100%"
       }}>
         <Form/>
         <Info/>

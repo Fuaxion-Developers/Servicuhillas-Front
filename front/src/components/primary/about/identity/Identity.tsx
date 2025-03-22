@@ -1,5 +1,4 @@
 import { Box, Typography, Paper } from "@mui/material";
-import Grid from "@mui/material/Grid";
 import Image from "next/image";
 
 const identity = [
@@ -25,30 +24,37 @@ const identity = [
     alt: "Mapa de colombia",
   },
 ];
+
 const Identity = () => {
 
   return (
     <Box
       sx={{
         textAlign: "center",
-        width: "90%",
+        width: "100%",
         mx: "auto",
+        display: "flex",
+        justifyContent: "center",
       }}
     >
-      <Grid
-        container
-        spacing={4}
+      <Box
         sx={{
+          display: "flex",
+          flexDirection: "column",
           justifyContent: "center",
           paddingX: "3rem",
         }}
       >
         {identity.map((i, index) => (
-          <Box key={index}>
+          <Box key={index} justifyContent={"center"}>
             {index % 2 === 0 ? (
               <Box
                 sx={{
                   display: "flex",
+                  flexDirection: {
+                    mobile: "column",
+                    tablet: "row",
+                  },
                   marginY: "2rem",
                   alignItems: "center",
                 }}
@@ -56,14 +62,31 @@ const Identity = () => {
                 <Box
                   sx={{
                     position: "relative",
-                    width: "10vw",
-                    height: "10vw",
+                    width: {
+                      mobile: "50vw",
+                      tablet: "20vw",
+                      laptop: "15vw",
+                      desktop: "10vw",
+                    },
+                    height: {
+                      mobile: "50vw",
+                      tablet: "20vw",
+                      laptop: "15vw",
+                      desktop: "10vw",
+                    },
                     overflow: "hidden",
                     justifyContent: "center",
                     alignContent: "center",
                     zIndex: 2,
                     borderRadius: "12px",
-                    marginRight: "-20px",
+                    marginRight: {
+                      mobile: "0",
+                      tablet: "-20px",
+                    },
+                    marginBottom: {
+                      mobile: "-2rem",
+                      tablet: "0",
+                    },
                     boxShadow: "2px 2px 10px #EAC01B",
                   }}
                 >
@@ -80,10 +103,16 @@ const Identity = () => {
                 </Box>
                 <Paper
                   sx={{
-                    width: "60vw",
+                    width: {
+                      mobile: "70vw",
+                      desktop: "60vw",
+                    },
                     backgroundColor: "#282F3C",
                     color: "white",
-                    padding: "20px 20px 20px 40px",
+                    padding: {
+                      mobile: "40px 20px 20px 20px",
+                      tablet: "20px 20px 20px 40px",
+                    },
                     borderRadius: "1rem",
                     display: "flex",
                     flexDirection: "column",
@@ -126,20 +155,33 @@ const Identity = () => {
               <Box
                 sx={{
                   display: "flex",
+                  flexDirection: {
+                    mobile: "column",
+                    tablet: "row",
+                  },
                   marginY: "2rem",
                   alignItems: "center",
                 }}
               >
                 <Paper
                   sx={{
-                    width: "60vw",
+                    width: {
+                      mobile: "70vw",
+                      desktop: "60vw",
+                    },
                     backgroundColor: "#282F3C",
                     color: "white",
-                    padding: "20px 40px 20px 20px",
+                    padding: {
+                      mobile: "20px 20px 40px 20px",
+                      tablet: "20px 40px 20px 20px",
+                    },
                     borderRadius: "1rem",
                     display: "flex",
                     flexDirection: "column",
-                    textAlign: "end",
+                    textAlign: {
+                      mobile: "start",
+                      tablet: "end",
+                    },
                     position: "relative",
                     zIndex: 1,
                   }}
@@ -176,14 +218,31 @@ const Identity = () => {
                 <Box
                   sx={{
                     position: "relative",
-                    width: "10vw",
-                    height: "10vw",
+                    width: {
+                      mobile: "50vw",
+                      tablet: "20vw",
+                      laptop: "15vw",
+                      desktop: "10vw",
+                    },
+                    height: {
+                      mobile: "50vw",
+                      tablet: "20vw",
+                      laptop: "15vw",
+                      desktop: "10vw",
+                    },
                     overflow: "hidden",
                     justifyContent: "center",
                     alignContent: "center",
                     zIndex: 2,
                     borderRadius: "12px",
-                    marginLeft: "-20px",
+                    marginLeft: {
+                      mobile: "0",
+                      tablet: "-20px",
+                    },
+                    marginTop: {
+                      mobile: "-2rem",
+                      tablet: "0",
+                    },
                     boxShadow: "2px 2px 10px #EAC01B",
                   }}
                 >
@@ -202,7 +261,7 @@ const Identity = () => {
             )}
           </Box>
         ))}
-      </Grid>
+      </Box>
     </Box>
   );
 };

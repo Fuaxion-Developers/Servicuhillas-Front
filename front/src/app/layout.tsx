@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'SERVICUCHILLAS',
   description:
     'Empresa especializada en la fabricación, mantenimiento y afilado de cuchillas industriales para las industrias del plástico, papel, madera, caucho, metal y alimentos.',
+  icons: {
+    icon: '/icon.svg',
+  }
 };
 
 
@@ -19,12 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body style={{ padding: '0 6.2rem' }}>
+      <body>
         <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <Navbar></Navbar>
+          <CssBaseline/>
+          <Navbar/>
           {children}
-          <Footer></Footer>
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>

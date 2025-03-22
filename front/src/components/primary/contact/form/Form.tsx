@@ -1,5 +1,5 @@
 "use client";
-import { Box, Button, Grid2, TextField, Typography } from "@mui/material";
+import { Box, Button, TextField, Typography } from "@mui/material";
 import handleForm from "../../../../utils/handleForm";
 import { useRef, useState } from "react";
 import { EmailT } from "@/types/email";
@@ -67,9 +67,14 @@ const Form = () => {
         borderRadius: 2,
         display: "flex",
         flexDirection: "column",
-        width: "60%",
-        paddingLeft: "10rem",
-        paddingRight: "5rem",
+        width: {
+          mobile: "100%",
+          laptop: "60%",
+        },
+        paddingRight: {
+          mobile: "0",
+          laptop: "5rem",
+        },
       }}
     >
       <Typography
@@ -84,26 +89,24 @@ const Form = () => {
         Completa el formulario
       </Typography>
       <form ref={form} onSubmit={handleSubmit}>
-        <Grid2
-          container
+        <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            marginY: "1.2rem",
           }}
         >
-          <Grid2
-            container
+          <Box
             sx={{
               display: "flex",
               justifyContent: "space-around",
               width: "100%",
             }}
           >
-            <Grid2
+            <Box
               sx={{
                 width: "49%",
-                marginY: "1.2rem",
               }}
             >
               <TextField
@@ -115,11 +118,10 @@ const Form = () => {
                 value={userMail.name}
               />
               <Typography>{errors.name}</Typography>
-            </Grid2>
-            <Grid2
+            </Box>
+            <Box
               sx={{
                 width: "49%",
-                marginY: "1.2rem",
               }}
             >
               <TextField
@@ -131,20 +133,19 @@ const Form = () => {
                 value={userMail.lastname}
               />
               <Typography>{errors.lastname}</Typography>
-            </Grid2>
-          </Grid2>
-          <Grid2
-            container
+            </Box>
+          </Box>
+          <Box
             sx={{
               display: "flex",
               justifyContent: "space-around",
               width: "100%",
+              marginY: "1.2rem",
             }}
           >
-            <Grid2
+            <Box
               sx={{
                 width: "49%",
-                marginY: "1.2rem",
               }}
             >
               <TextField
@@ -157,11 +158,10 @@ const Form = () => {
                 onChange={handleInputChange}
                 value={userMail.email}
               />
-            </Grid2>
-            <Grid2
+            </Box>
+            <Box
               sx={{
                 width: "49%",
-                marginY: "1.2rem",
               }}
             >
               <TextField
@@ -173,10 +173,9 @@ const Form = () => {
                 onChange={handleInputChange}
                 value={userMail.phone}
               />
-            </Grid2>
-          </Grid2>
-          <Grid2
-            container
+            </Box>
+          </Box>
+          <Box
             sx={{
               display: "flex",
               width: "99%",
@@ -192,8 +191,8 @@ const Form = () => {
               onChange={handleInputChange}
               value={userMail.content}
             />
-          </Grid2>
-        </Grid2>
+          </Box>
+        </Box>
         <Box mt={4} sx={{ width: "99%" }} mx="auto">
           <Button
             fullWidth

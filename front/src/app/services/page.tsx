@@ -1,6 +1,5 @@
 import IndexService from '@/components/primary/service/IndexService';
 
-
 const page = () => {
   return (
     <div>

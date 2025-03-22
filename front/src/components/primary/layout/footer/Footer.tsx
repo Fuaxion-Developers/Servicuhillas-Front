@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <Box sx={{ mx: "-62px" }}>
+    <Box sx={{ mx: "-3vw" }}>
       <Box
         sx={{
           display: "flex",
@@ -39,19 +39,32 @@ const Footer = () => {
                 laptop: "30%",
                 desktop: "30%",
               },
+              display: "flex",
+              justifyContent: "center",
             }}
           >
-            <Image
-              alt="Productos"
-              src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742098349/LogoServicuchillas_wcd5v5.svg"
-              width={500}
-              height={300}
-              style={{
-                width: "100%", // Hace que la imagen se adapte al contenedor
-                height: "100%", // Mantiene la proporción
-                objectFit: "cover", // Evita la distorsión y llena el box
+            <Box
+              sx={{
+                width: {
+                  mobile: "90%",
+                  tablet: "80%",
+                  laptop: "70%",
+                },
+                mx: "auto",
               }}
-            ></Image>
+            >
+              <Image
+                alt="Productos"
+                src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742098349/LogoServicuchillas_wcd5v5.svg"
+                width={500}
+                height={300}
+                style={{
+                  width: "100%", // Hace que la imagen se adapte al contenedor
+                  height: "100%", // Mantiene la proporción
+                  objectFit: "contain", // Evita la distorsión y llena el box
+                }}
+              ></Image>
+            </Box>
           </Box>
 
           {/* Descripción */}
@@ -89,9 +102,9 @@ const Footer = () => {
               flexDirection: "column",
               alignItems: {
                 mobile: "center",
-                tablet: "end",
-                laptop: "end",
-                desktop: "end",
+                tablet: "center",
+                laptop: "center",
+                desktop: "center",
               },
             }}
           >
@@ -120,7 +133,11 @@ const Footer = () => {
           <Typography variant="body2">
             &copy; 2025 - SERVICUCHILLAS LTDA. Elaborado por{" "}
           </Typography>
-          <Link href="https://landing-fuaxions.vercel.app/">
+          <Link
+            href="https://landing-fuaxions.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Fuaxion />
           </Link>
         </Box>
