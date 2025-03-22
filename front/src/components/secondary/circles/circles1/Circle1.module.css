@@ -1,8 +1,0 @@
-.circle {
-  width: 500px;  /* Tamaño del círculo */
-  height: 500px;  /* Tamaño del círculo */
-  border-radius: 50%; 
-  background: linear-gradient(135deg, #26156E  20%, #26156E  80%);  /* Un degradado suave */
-  filter: blur(300px);  /* Suaviza el desenfoque */
- 
-}

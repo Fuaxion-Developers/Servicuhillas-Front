@@ -1,11 +1,10 @@
 import IndexAbout from '@/components/primary/about/IndexAbout'
-import { Box } from '@mui/material';
 
 const page = () => {
   return (
-  <Box>
+  <div>
     <IndexAbout></IndexAbout>
-  </Box>
+  </div>
   );
 };
 

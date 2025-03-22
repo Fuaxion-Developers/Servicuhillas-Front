@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+
 import { Box, Grid2, Typography, Paper, Avatar } from "@mui/material";
 
 const testimonials = [
