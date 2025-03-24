@@ -3,6 +3,7 @@ import { useParams, useRouter } from "next/navigation";
 import { Box, Typography, Button } from "@mui/material";
 import Image from "next/image";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 // Mapeo de nombres en español
 const categoryNames: Record<string, string> = {
@@ -74,7 +75,7 @@ const categoryImages: Record<string, string> = {
   wood: "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742078753/725d5b25-78a7-421f-b6a9-b430c708c5b5_eciohe.png",
   rubber:
     "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742515264/cuchis_sin_fondo_o2ls1m.png",
-    // "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742515663/cuchis_sin_fondo_2_s9g8om.png",
+  // "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742515663/cuchis_sin_fondo_2_s9g8om.png",
   metal:
     "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742078753/Metalmecanica_qggkft.png",
   food: "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742078756/28256cce-9b07-4aac-99f5-6196a5c70c1d_h4qoj9.png",
@@ -181,17 +182,31 @@ export default function ProductPage() {
           >
             <Box
               sx={{
-                display: "inline-block",
-                backgroundColor: "#EAC01B",
-                color: "black",
-                padding: "8px 20px",
-                borderRadius: "8px",
-                fontWeight: "bold",
-                fontSize: "16px",
-                marginBottom: "20px",
+                display: "flex",
+                justifyContent: "space-between",
               }}
             >
-              Descripción
+              <Box
+                sx={{
+                  display: "inline-block",
+                  backgroundColor: "#EAC01B",
+                  color: "black",
+                  borderRadius: "10px",
+                  padding: "12px 16px",
+                  fontWeight: "bold",
+                  fontSize: "16px",
+                  // marginBottom: "20px",
+                  height: "100%",
+                }}
+              >
+                Descripción
+              </Box>
+              <Button variant="contained" href={`/contact`}>
+                Cotizar
+                <ArrowOutwardIcon
+                  sx={{ fontSize: "1.6rem", marginLeft: "1rem" }}
+                />
+              </Button>
             </Box>
             {descriptions[category as string] || "Descripción no encontrada."}
           </Typography>
@@ -213,7 +228,7 @@ export default function ProductPage() {
         >
           <Image
             src={imageUrl}
-            alt={`Cuchillas para la industria ${translatedCategory}`}
+            alt={`Servicuchillas - Cuchillas para la industria ${translatedCategory}`}
             width={width}
             height={height}
             style={{ borderRadius: "12px", width: "100%", height: "auto" }}

@@ -53,17 +53,21 @@ const Footer = () => {
                 mx: "auto",
               }}
             >
-              <Image
-                alt="Productos"
-                src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742098349/LogoServicuchillas_wcd5v5.svg"
-                width={500}
-                height={300}
-                style={{
-                  width: "100%", // Hace que la imagen se adapte al contenedor
-                  height: "100%", // Mantiene la proporción
-                  objectFit: "contain", // Evita la distorsión y llena el box
-                }}
-              ></Image>
+              <Link
+                href="/"
+              >
+                <Image
+                  alt="Servicuchillas - Cuchillas industriales"
+                  src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742098349/LogoServicuchillas_wcd5v5.svg"
+                  width={500}
+                  height={300}
+                  style={{
+                    width: "100%", // Hace que la imagen se adapte al contenedor
+                    height: "100%", // Mantiene la proporción
+                    objectFit: "contain", // Evita la distorsión y llena el box
+                  }}
+                ></Image>
+              </Link>
             </Box>
           </Box>
 
@@ -134,7 +138,7 @@ const Footer = () => {
             &copy; 2025 - SERVICUCHILLAS LTDA. Elaborado por{" "}
           </Typography>
           <Link
-            href="https://landing-fuaxions.vercel.app/"
+            href="https://landingfuaxion.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >

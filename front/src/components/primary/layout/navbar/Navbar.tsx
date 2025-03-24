@@ -75,7 +75,7 @@ const Navbar = () => {
         <Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start" }}>
           <Image
             src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742654501/Logo_sugjvy.svg"
-            alt="Cuchillas industriales"
+            alt="Cuchillas industriales - Servicuchillas"
             width={252}
             height={32}
             style={{

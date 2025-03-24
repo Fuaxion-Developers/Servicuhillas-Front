@@ -78,7 +78,7 @@ const ImgInfo = () => {
             >
             <Image
               src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741883183/proartec-3_dx7gip_mosaoz.webp"
-              alt="imagen"
+              alt="Cuchillas industriales - Servicuchillas"
               fill
               style={{
                 borderRadius: "12px",

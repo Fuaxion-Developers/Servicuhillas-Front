@@ -166,7 +166,7 @@ export default function ProductPage() {
         <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
           <Image
             src={imageUrl}
-            alt={`Cuchillas para la industria ${translatedCategory}`}
+            alt={`Servicuchillas - Cuchillas para la industria ${translatedCategory}`}
             width={width}
             height={height}
             style={{ borderRadius: '12px' }}

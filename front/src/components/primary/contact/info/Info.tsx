@@ -13,7 +13,8 @@ const sections = [
     icon: <PhoneAndroid fontSize="large" color="action" />,
     title: "Llámanos",
     description: "Habla directamente con nosotros a las líneas",
-    content: "322 789 16 82\n601 293 99 65",
+    linkText: "322 789 16 82\n601 293 99 65",
+    linkHref: "https://wa.me/573227891682?text=Hola,%20quiero%20más%20información%20sobre%20sus%20servicios%20de%20fabricación%20y%20afilado%20de%20cuchillas.",
   },
   {
     icon: <Email fontSize="large" color="action" />,
@@ -95,6 +96,7 @@ const Info = () => {
                   textDecoration: "none",
                   color: "#EAC01B",
                   "&:hover": { textDecoration: "underline" },
+                  whiteSpace: "pre-line",
                 }}
               >
                 {section.linkText}
