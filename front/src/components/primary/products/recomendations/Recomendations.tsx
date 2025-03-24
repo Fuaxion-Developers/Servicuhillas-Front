@@ -71,7 +71,7 @@ const Recomendations = () => {
               ? "https://res.cloudinary.com/dzhh3k5kj/image/upload/v1742250592/Todas_1_dpkusj.png"
               : "https://res.cloudinary.com/dzhh3k5kj/image/upload/a_-90/v1742250592/Todas_1_dpkusj.png"
           }
-          alt="Cuchillas industriales"
+          alt="Cuchillas industriales - Servicuchillas"
           width={500}
           height={500}
           style={{

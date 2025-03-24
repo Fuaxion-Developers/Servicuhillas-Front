@@ -113,7 +113,7 @@ const Hero = () => {
         }}
       >
         <Image
-          alt="Productos"
+          alt="Cuchillas industriales - Servicuchillas"
           src={
             screenWidth >= 1440
               ? "https://res.cloudinary.com/dzhh3k5kj/image/upload/a_-90/v1742250592/Todas_1_dpkusj.png"

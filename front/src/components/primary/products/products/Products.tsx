@@ -88,7 +88,7 @@ export default function Products() {
               >
                 <Image
                   src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741962352/polipropileno_02_uwo9bg.webp"
-                  alt="Cuchillas para la industria del plástico"
+                  alt="Servicuchillas - Cuchillas para la industria del plástico"
                   layout="fill"
                   objectFit="cover"
                 />
@@ -136,7 +136,7 @@ export default function Products() {
               >
                 <Image
                   src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741730891/linea-papel_wj0m4y.jpg"
-                  alt="Cuchillas para la industria del papel"
+                  alt="Servicuchillas - Cuchillas para la industria del papel"
                   layout="fill"
                   objectFit="cover"
                 />
@@ -200,7 +200,7 @@ export default function Products() {
               >
                 <Image
                   src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741730810/linea-madera_02_liy1ny.jpg"
-                  alt="Cuchillas para la industria de la madera"
+                  alt="Servicuchillas - Cuchillas para la industria de la madera"
                   layout="fill"
                   objectFit="cover"
                 />
@@ -260,7 +260,7 @@ export default function Products() {
               >
                 <Image
                   src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741730808/linea-caucho_emewv9.jpg"
-                  alt="Cuchillas para la industria del caucho"
+                  alt="Servicuchillas - Cuchillas para la industria del caucho"
                   layout="fill"
                   objectFit="cover"
                 />
@@ -335,7 +335,7 @@ export default function Products() {
               >
                 <Image
                   src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741730762/linea-metalmecanica_02_cavvts.jpg"
-                  alt="Cuchillas para la industria metalmecánica"
+                  alt="Servicuchillas - Cuchillas para la industria metalmecánica"
                   layout="fill"
                   objectFit="cover"
                 />
@@ -387,7 +387,7 @@ export default function Products() {
               >
                 <Image
                   src="https://res.cloudinary.com/dzhh3k5kj/image/upload/v1741730727/linea-alimentos_ci9fsb.jpg"
-                  alt="Cuchillas para la industria de alimentos"
+                  alt="Servicuchillas - Cuchillas para la industria de alimentos"
                   layout="fill"
                   objectFit="cover"
                 />

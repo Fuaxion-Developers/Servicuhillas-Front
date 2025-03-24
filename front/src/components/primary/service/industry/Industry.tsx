@@ -42,7 +42,7 @@ const Industry = ({ industry }: { industry: IndustryT }) => {
       >
         <Image
           src={industry.photo1}
-          alt={industry.title}
+          alt={`Servicuchillas - Cuchillas industriales: ${industry.title}`}
           width={500}
           height={250}
           style={{
@@ -209,7 +209,7 @@ const Industry = ({ industry }: { industry: IndustryT }) => {
             >
               <Image
                 src={photo}
-                alt={`${industry.title}_${index + 1}`}
+                alt={`Servicuchillas - Cuchillas industriales: ${industry.title}_${index + 1}`}
                 width={667}
                 height={444}
                 style={{
